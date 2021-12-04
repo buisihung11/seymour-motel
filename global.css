@@ -1,0 +1,120 @@
+* {
+  font-family: "Public Sans", "Rozha One", serif !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+p,
+.body {
+  font-size: 16px;
+}
+
+p {
+  font-weight: 200;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.rozha-font {
+  font-family: "Rozha One" !important;
+}
+
+.seymour-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #222222;
+  padding: 16px;
+}
+
+.px-6 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.py-6 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.pr-6 {
+  padding-right: 24px;
+}
+
+.pl-6 {
+  padding-left: 24px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .px-6 {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  .py-6 {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .pr-6 {
+    padding-right: 56px;
+  }
+
+  .pl-6 {
+    padding-left: 56px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 48px;
+  }
+
+  .px-6 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .py-6 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .pr-6 {
+    padding-right: 60px;
+  }
+
+  .pl-6 {
+    padding-left: 60px;
+  }
+}

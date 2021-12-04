@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
+
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/"
+    />
+
+    <link rel="stylesheet" href="./dist/css/bootstrap.css" />
+    <!-- Bootstrap core CSS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom styles for this template -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,200;0,300;0,400;0,700;1,200;1,700&family=Rozha+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand logo__wrapper p-4" href="/">
+          <img class="logo" src="./assets/logo.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./accomodation.html"
+                >Accommodations <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./how-to-book.html">How to book?</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/privacy.html"
+                id="dropdown03"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >About</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="btn btn-outline-primary btn-lg mr-2">
+            Call us +61 3 5792 1500
+          </button>
+          <button class="btn btn-primary btn-lg">BOOK NOW</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main">
+      <!-- WELCOME -->
+
+      <section>
+        <div class="mx-auto text-center py-5" style="width: 680px">
+          <h1 class="rozha-font">Accommodation</h1>
+        </div>
+        <div style="padding-left: 60px; padding-right: 60px">
+          <div class="d-flex justify-content-center">
+            <div class="text-right pr-4">
+              <p style="color: #c0bcb7" class="mb-0">Previous</p>
+              <img
+                style="width: 80px; height: 4px"
+                src="./assets/left-arrow.png"
+              />
+            </div>
+            <div class="text-left">
+              <p style="color: #c0bcb7" class="mb-0">Next</p>
+              <img
+                style="width: 80px; height: 4px"
+                src="./assets/right-arrow.png"
+              />
+            </div>
+          </div>
+          <div class="home__banner-wrapper">
+            <div class="home__banner-item">
+              <div class="accomodation__banner-title">
+                <h4
+                  class="rozha-font"
+                  style="font-weight: 200; width: 200px; text-align: center"
+                >
+                  Single Room
+                </h4>
+              </div>
+              <img src="./assets/banner.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="padding-top: 260px">
+        <div style="padding: 0 60px; position: relative">
+          <div
+            style="background-color: #e9e6e5; padding: 64px 112px; width: 870px"
+          >
+            <p style="font-size: 20px">Start from</p>
+            <p style="font-size: 20px; color: #b52804">$110 / night</p>
+            <p class="py-4" style="font-weight: 200">
+              These rooms have been designed specifically to meet the needs of
+              individuals. They are extremely comfortable, allowing you to begin
+              a new "next day" with a positive mindset. The gentle touch of
+              nature in a calm and quiet environment can be a great relief for
+              your's tiredness.
+            </p>
+
+            <div class="d-flex">
+              <div class="d-flex align-items-center" style="margin-right: 40px">
+                <img src="./assets/tick.png" alt="" class="pr-2" />
+                <p>Free breakfast</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <img src="./assets/tick.png" alt="" class="pr-2" />
+                <p>Free Parking</p>
+              </div>
+            </div>
+            <div class="d-flex" style="margin-top: 40px">
+              <button class="btn btn-primary btn-lg mr-4">BOOK NOW</button>
+              <button class="btn btn-outline-primary btn-lg mr-2">
+                How to book
+              </button>
+            </div>
+          </div>
+          <div
+            style="
+              position: absolute;
+              width: 760px;
+              height: 470px;
+              top: 40px;
+              right: 60px;
+            "
+          >
+            <img
+              style="width: 100%"
+              src="./assets/room-type-1.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section style="padding-top: 200px">
+        <div style="text-align: center">
+          <h2 style="color: #c0bcb7; font-weight: 500" class="pb-2">
+            More options
+          </h2>
+        </div>
+        <div
+          class="d-flex justify-content-between"
+          style="padding: 60px 0; padding-bottom: 200px"
+        >
+          <div>
+            <div style="width: 680px; padding: 54px 0 60px 54px">
+              <div>
+                <h2 style="color: #c0bcb7; font-weight: 500" class="pb-2">
+                  Highlight
+                </h2>
+                <p style="font-weight: 200">
+                  People always don’t travel in groups – some travel alone for
+                  various reasons.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-end">
+              <p style="color: #b52804" class="mb-0">DISCOVER</p>
+              <img style="width: 80px; height: 4px" src="./assets/arrow.png" />
+            </div>
+          </div>
+
+          <div style="width: 600px; height: 800px; position: relative">
+            <img src="./assets/welcome1.png" class="img-fluid" />
+            <div
+              style="
+                width: 425px;
+                height: 560px;
+                position: absolute;
+                left: -40%;
+                top: 60%;
+              "
+            >
+              <img src="./assets/welcome2.png" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="padding-top: 160px">
+        <div class="d-flex justify-content-between">
+          <div style="width: 540px; padding-left: 60px">
+            <h2 style="color: #c0bcb7; font-weight: 500" class="pb-2">
+              Facility
+            </h2>
+            <p style="font-weight: 200">
+              Seymour Motel is an ideal rest stop for travelers as well as a
+              wonderful place to stay while exploring the town's true beauty.
+              There are three options available to you, depending on your needs
+              and purposes.
+            </p>
+            <div class="d-flex align-items-center">
+              <p style="color: #b52804" class="mb-0 mr-2">MORE DETAIL</p>
+              <img style="width: 80px; height: 4px" src="./assets/arrow.png" />
+            </div>
+
+            <div
+              class="d-flex justify-content-between"
+              style="padding-top: 40px; padding-right: 60px"
+            >
+              <div>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/icons/wifi.png"
+                    style="width: 24px; height: 24px; margin-right: 14px"
+                  />
+                  <p style="font-size: 20px; font-weight: 300; margin: 0">
+                    Wifi
+                  </p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/icons/tv.png"
+                    style="width: 24px; height: 24px; margin-right: 14px"
+                  />
+                  <p style="font-size: 20px; font-weight: 300; margin: 0">
+                    Flat Screen TV
+                  </p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/icons/free-parking.png"
+                    style="width: 24px; height: 24px; margin-right: 14px"
+                  />
+                  <p style="font-size: 20px; font-weight: 300; margin: 0">
+                    Free Parking
+                  </p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/icons/air-condition.png"
+                    style="width: 24px; height: 24px; margin-right: 14px"
+                  />
+                  <p style="font-size: 20px; font-weight: 300; margin: 0">
+                    Air Conditioning
+                  </p>
+                </div>
+              </div>
+              <!-- RIGHT -->
+              <div>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/icons/breakfast.png"
+                    style="width: 24px; height: 24px; margin-right: 14px"
+                  />
+                  <p style="font-size: 20px; font-weight: 300; margin: 0">
+                    Free Breakfast
+                  </p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/icons/swimming.png"
+                    style="width: 24px; height: 24px; margin-right: 14px"
+                  />
+                  <p style="font-size: 20px; font-weight: 300; margin: 0">
+                    Swimming Pool
+                  </p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/icons/bbq.png"
+                    style="width: 24px; height: 24px; margin-right: 14px"
+                  />
+                  <p style="font-size: 20px; font-weight: 300; margin: 0">
+                    Free BBQ Facility
+                  </p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/icons/bathroom.png"
+                    style="width: 24px; height: 24px; margin-right: 14px"
+                  />
+                  <p style="font-size: 20px; font-weight: 300; margin: 0">
+                    Private Bathroom
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="width: auto; height: 480px">
+            <img src="./assets/room-type-1.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div style="padding: 60px">
+          <div style="text-align: center">
+            <h2 style="color: #c0bcb7; font-weight: 500" class="pb-2">
+              More options
+            </h2>
+          </div>
+
+          <div class="room__type-wrapper room__type-right ml-auto">
+            <img class="img-fluid" src="./assets/room-type-2.png" />
+            <div class="room__type-title">
+              <h2>Twin Room</h2>
+            </div>
+            <div class="room__type-price">
+              <p style="font-weight: 200; font-size: 16px" class="mb-0">
+                Start from
+              </p>
+              <p style="font-weight: 300; font-size: 20px">$120 / night</p>
+            </div>
+          </div>
+
+          <div class="room__type-wrapper room__type-left">
+            <img class="img-fluid" src="./assets/room-type-1.png" />
+            <div class="room__type-title">
+              <h2>Family Room</h2>
+            </div>
+            <div class="room__type-price">
+              <p style="font-weight: 200; font-size: 16px" class="mb-0">
+                Start from
+              </p>
+              <p style="font-weight: 300; font-size: 20px">$160 / night</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row justify-content-between px-6 py-6">
+          <div class="col-12 col-md-3">
+            <h2 class="seymour-title">Gallery</h2>
+          </div>
+          <div class="col-12 col-md-9">
+            <div class="row no-wrap">
+              <div class="col-6 col-md-4 pb-4">
+                <img src="./assets/gallery-1.png" alt="" class="img-fluid" />
+              </div>
+              <div class="col-6 col-md-4 pb-4">
+                <img src="./assets/gallery-2.png" alt="" class="img-fluid" />
+              </div>
+              <div class="col-6 col-md-4 pb-4">
+                <img src="./assets/gallery-3.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- END WELCOME -->
+    </main>
+
+    <footer class="footer" style="padding: 0 60px">
+      <div
+        class="d-flex"
+        style="padding: 24px 0px; border-top: 1px solid #c0bcb7"
+      >
+        <div>
+          <p style="text-decoration: underline; color: #222222">
+            Privacy policy
+          </p>
+          <p style="color: #c0bcb7">
+            ©2020 Seymour Motel. All Rights Reserved.
+          </p>
+        </div>
+        <div style="flex: 1"></div>
+        <div>
+          <img class="mr-2" src="./assets/instagram.png" alt="" />
+          <img src="./assets/facebook.png" alt="" />
+        </div>
+        <div style="flex: 1"></div>
+        <div>
+          <p style="color: #c0bcb7; text-align: left">
+            144 Goulburn Valley Hwy, <br />
+            Seymour, VIC 3660
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>'
+        );
+    </script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

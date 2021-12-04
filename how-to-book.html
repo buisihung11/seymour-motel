@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
+
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/"
+    />
+
+    <link rel="stylesheet" href="./dist/css/bootstrap.css" />
+    <!-- Bootstrap core CSS -->
+    <script
+      src="https://kit.fontawesome.com/a91a27e46f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom styles for this template -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,200;0,300;0,400;0,700;1,200;1,700&family=Rozha+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="howtobook.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand logo__wrapper p-4" href="/">
+          <img class="logo" src="./assets/logo.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./accomodation.html"
+                >Accommodations <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">How to book?</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/privacy.html"
+                id="dropdown03"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >About</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="btn btn-outline-primary btn-lg mr-2">
+            Call us +61 3 5792 1500
+          </button>
+          <button class="btn btn-primary btn-lg">BOOK NOW</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main">
+      <!-- WELCOME -->
+
+      <section>
+        <div class="mx-auto text-center py-5" style="width: 680px">
+          <h1 class="rozha-font">How to book?</h1>
+        </div>
+      </section>
+
+      <section class="step__wrapper px-6">
+        <div class="row">
+          <div class="col-12 col-md-5 col text-center text-md-left">
+            <h3>Step 1. Check the schedule</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie
+              laoreet aliquam morbi ipsum eu suspendisse ornare. Ac imperdiet
+              suspendisse ut nibh commodo proin amet.
+            </p>
+          </div>
+          <div class="col-12 col-md-1"></div>
+          <div class="col-12 col-md-6">
+            <img
+              class="img-fluid"
+              src="./assets/how-to-book/step1.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-5 col text-center text-md-left">
+            <h3>Step 2. Choose room</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie
+              laoreet aliquam morbi ipsum eu suspendisse ornare. Ac imperdiet
+              suspendisse ut nibh commodo proin amet.
+            </p>
+          </div>
+          <div class="col-12 col-md-1"></div>
+          <div class="col-12 col-md-6">
+            <img
+              class="img-fluid"
+              src="./assets/how-to-book/step2.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-5 col text-center text-md-left">
+            <h3>Step 3. Check out with safe secured payment</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie
+              laoreet aliquam morbi ipsum eu suspendisse ornare. Ac imperdiet
+              suspendisse ut nibh commodo proin amet.
+            </p>
+          </div>
+          <div class="col-12 col-md-1"></div>
+          <div class="col-12 col-md-6">
+            <img
+              class="img-fluid"
+              src="./assets/how-to-book/step3.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="px-6">
+        <div class="row">
+          <div class="col-6 pr-2">
+            <h2 style="color: #c0bcb7">
+              Here are some common questions about Seymour
+            </h2>
+          </div>
+          <div class="col-6">
+            <div class="card my-2">
+              <div
+                class="card-header"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+              >
+                <span class="title">Can I cancel my booking?</span>
+                <span class="accicon"></span>
+              </div>
+              <div class="collapse collapse_content" id="collapseOne">
+                <div class="d-flex card-body">
+                  <div class="pr-2">
+                    <img
+                      style="width: 80px; height: 4px"
+                      src="./assets/arrow.png"
+                    />
+                  </div>
+                  <div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Molestie laoreet aliquam morbi ipsum eu suspendisse
+                      ornare. Ac imperdiet suspendisse ut nibh commodo proin
+                      amet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card my-2">
+              <div
+                class="card-header"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="true"
+              >
+                <span class="title">Is my payment safe? How?</span>
+                <span class="accicon"></span>
+              </div>
+              <div class="collapse collapse_content" id="collapseTwo">
+                <div class="d-flex card-body">
+                  <div class="pr-2">
+                    <img
+                      style="width: 80px; height: 4px"
+                      src="./assets/arrow.png"
+                    />
+                  </div>
+                  <div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Molestie laoreet aliquam morbi ipsum eu suspendisse
+                      ornare. Ac imperdiet suspendisse ut nibh commodo proin
+                      amet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card my-2">
+              <div
+                class="card-header"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="true"
+              >
+                <span class="title">Is my payment safe? How?</span>
+                <span class="accicon"></span>
+              </div>
+              <div class="collapse collapse_content" id="collapseThree">
+                <div class="d-flex card-body">
+                  <div class="pr-2">
+                    <img
+                      style="width: 80px; height: 4px"
+                      src="./assets/arrow.png"
+                    />
+                  </div>
+                  <div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Molestie laoreet aliquam morbi ipsum eu suspendisse
+                      ornare. Ac imperdiet suspendisse ut nibh commodo proin
+                      amet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card my-2">
+              <div
+                class="card-header"
+                data-toggle="collapse"
+                data-target="#collapseFour"
+                aria-expanded="true"
+              >
+                <span class="title">Is my payment safe? How?</span>
+                <span class="accicon"></span>
+              </div>
+              <div class="collapse collapse_content" id="collapseFour">
+                <div class="d-flex card-body">
+                  <div class="pr-2">
+                    <img
+                      style="width: 80px; height: 4px"
+                      src="./assets/arrow.png"
+                    />
+                  </div>
+                  <div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Molestie laoreet aliquam morbi ipsum eu suspendisse
+                      ornare. Ac imperdiet suspendisse ut nibh commodo proin
+                      amet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row" style="padding-right: 60px">
+          <div class="col-5">
+            <img
+              src="./assets/how-to-book/contact.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-1"></div>
+          <div class="col-5">
+            <div
+              class="d-flex justify-content-between flex-column"
+              style="padding-right: 76px; height: 100%"
+            >
+              <div class="">
+                <h2 style="color: #c0bcb7">Still need help?</h2>
+              </div>
+              <div class="d-flex flex-column">
+                <input
+                  placeholder="Name"
+                  class="seymour-input"
+                  type="text"
+                  style="width: 100%"
+                />
+                <input
+                  placeholder="Email"
+                  class="seymour-input"
+                  type="text"
+                  style="margin: 30px 0; width: 100%"
+                />
+                <input
+                  placeholder="Email"
+                  class="seymour-input"
+                  type="text"
+                  style="margin: 30px 0; width: 100%"
+                />
+              </div>
+              <div>
+                <button
+                  class="btn btn-lg btn-primary"
+                  style="margin-right: 14px"
+                >
+                  SUBMIT
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- END WELCOME -->
+    </main>
+
+    <footer class="footer" style="padding: 0 60px">
+      <div
+        class="row align-items-center"
+        style="padding: 24px 0px; border-top: 1px solid #c0bcb7"
+      >
+        <div class="col-3">
+          <p style="text-decoration: underline; color: #222222">
+            Privacy policy
+          </p>
+          <p style="color: #c0bcb7">
+            ©2020 Seymour Motel. All Rights Reserved.
+          </p>
+        </div>
+        <div class="text-center col">
+          <img class="mr-1" src="./assets/instagram.png" alt="" />
+          <img class="" src="./assets/facebook.png" alt="" />
+        </div>
+        <div class="col-2">
+          <p style="color: #c0bcb7; text-align: left">
+            144 Goulburn Valley Hwy, <br />
+            Seymour, VIC 3660
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>'
+        );
+    </script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
