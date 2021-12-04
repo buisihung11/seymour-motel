@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
@@ -18,6 +15,7 @@
     />
 
     <link rel="stylesheet" href="./dist/css/bootstrap.css" />
+
     <!-- Bootstrap core CSS -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -49,6 +47,17 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,200;0,300;0,400;0,700;1,200;1,700&family=Rozha+One&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css"
+    />
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css"
     />
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="variables.css" />
@@ -107,7 +116,9 @@
           <button class="btn btn-outline-primary btn-lg mr-2">
             Call us +61 3 5792 1500
           </button>
-          <button class="btn btn-primary btn-lg">BOOK NOW</button>
+          <a href="https://useross.com/booking.php?dialog=motel&motel_id=433">
+            <button class="btn btn-primary btn-lg">BOOK NOW</button>
+          </a>
         </div>
       </nav>
     </header>
@@ -116,50 +127,88 @@
     <main role="main">
       <!-- WELCOME -->
 
+      <div class="home__sticky-address">
+        <p style="font-weight: 200; width: 200px">
+          144 Goulburn Valley Hwy, Seymour, VIC 3660
+        </p>
+      </div>
+
       <section>
-        <div class="mx-auto text-center py-5" style="width: 680px">
-          <h1 class="rozha-font">Seymour Motel</h1>
-          <p style="font-size: 20px; text-align: right; margin-top: -10px">
-            Affordable, all-inclusive packages available in Victoria
-          </p>
-        </div>
-        <div style="padding-left: 60px; padding-right: 60px">
-          <div class="d-flex justify-content-center">
-            <div class="text-right pr-4">
-              <p style="color: #c0bcb7" class="mb-0">Previous</p>
-              <img
-                style="width: 80px; height: 4px"
-                src="./assets/left-arrow.png"
-              />
+        <section class="row justify-content-center pb-5">
+          <div
+            class="
+              mx-auto
+              text-center
+              pt-5
+              pb-2
+              container-sm
+              col-12 col-md-8 col-lg-8
+            "
+          >
+            <h1 class="rozha-font">Seymour Motel</h1>
+          </div>
+          <div class="col-12 col-md-8 col-lg-6">
+            <p style="font-size: 20px; text-align: right; margin-top: -10px">
+              Affordable, all-inclusive packages available in Victoria
+            </p>
+          </div>
+        </section>
+
+        <div class="splide px-6">
+          <div class="splide__arrows d-flex justify-content-center">
+            <div class="text-right pr-4 slide__btn slide__btn-prev">
+              <p class="mb-0">Previous</p>
+              <svg
+                width="88"
+                height="6"
+                viewBox="0 0 88 6"
+                fill="#E9E6E5"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 3L5 0.113249V5.88675L0 3ZM88 3.5H4.5V2.5H88V3.5Z" />
+              </svg>
             </div>
-            <div class="text-left">
-              <p style="color: #c0bcb7" class="mb-0">Next</p>
-              <img
-                style="width: 80px; height: 4px"
-                src="./assets/right-arrow.png"
-              />
+            <div class="text-left slide__btn-next slide__btn">
+              <p class="mb-0">Next</p>
+              <svg
+                width="88"
+                height="6"
+                viewBox="0 0 88 6"
+                fill="#E9E6E5"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M88 3L83 0.113249V5.88675L88 3ZM0 3.5H83.5V2.5H0V3.5Z"
+                />
+              </svg>
             </div>
           </div>
-          <div class="home__banner-wrapper">
-            <div class="home__banner-item">
-              <div class="home__banner-title">
-                <p style="font-weight: 200; width: 200px">
-                  144 Goulburn Valley Hwy, Seymour, VIC 3660
-                </p>
-              </div>
-              <img src="./assets/banner.png" alt="" class="img-fluid" />
-            </div>
+          <div class="splide__track home__banner-wrapper">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="./assets/banner1.png" alt="" class="img-fluid" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/banner2.png" alt="" class="img-fluid" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/banner3.png" alt="" class="img-fluid" />
+              </li>
+              <li class="splide__slide">
+                <img src="./assets/banner4.png" alt="" class="img-fluid" />
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
       <section>
         <div
-          class="d-flex justify-content-between"
-          style="padding: 60px 0; padding-bottom: 200px"
+          class="row justify-content-between px-6"
+          style="padding-bottom: 200px"
         >
-          <div>
-            <div style="width: 680px; padding: 54px 0 60px 54px">
+          <div class="col-12 col-md-7 mb-5">
+            <div style="padding: 54px 0">
               <div>
                 <h2 style="color: #c0bcb7; font-weight: 500" class="pb-2">
                   Welcome to the clean and peaceful motel in Seymour
@@ -174,23 +223,29 @@
                 </p>
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-end">
-              <p style="color: #b52804" class="mb-0">DISCOVER</p>
-              <img style="width: 80px; height: 4px" src="./assets/arrow.png" />
-            </div>
           </div>
 
-          <div style="width: 600px; height: 800px; position: relative">
+          <div
+            class="col-8 col-md-4 text-right ml-auto ml-md-none wow fadeInRight"
+            style="position: relative"
+          >
             <img src="./assets/welcome1.png" class="img-fluid" />
             <div
-              style="
-                width: 425px;
-                height: 560px;
-                position: absolute;
-                left: -40%;
-                top: 60%;
-              "
+              class="text-center"
+              style="height: 560px; position: absolute; left: -80%; top: 60%"
             >
+              <div
+                class="
+                  btn__arrow
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  mb-4
+                "
+              >
+                <p class="mb-0">DISCOVER</p>
+                <img src="./assets/arrow.png" />
+              </div>
               <img src="./assets/welcome2.png" class="img-fluid" />
             </div>
           </div>
@@ -199,7 +254,7 @@
 
       <section>
         <div style="background-color: #e9e6e5">
-          <div class="row px-6 py-6">
+          <div class="row py-6" style="padding: 144px 60px">
             <div class="col-12 col-md-4 text-center convention__wrapper">
               <img src="./assets/convention-1.png" />
               <h3 class="convention__wrapper-title" style="color: #c0bcb7">
@@ -255,7 +310,7 @@
             </div>
           </div>
 
-          <div class="row justify-content-start">
+          <div class="row justify-content-start wow fadeInLeft">
             <div class="col-12 col-md-6">
               <div class="room__type-wrapper room__type-left">
                 <img class="img-fluid" src="./assets/room-type-1.png" />
@@ -270,27 +325,21 @@
                       $110 / night
                     </p>
                   </div>
-                  <div class="d-flex align-items-center">
-                    <p style="color: #b52804" class="mb-0 mr-2">DETAIL</p>
-                    <img
-                      style="width: 80px; height: 4px"
-                      src="./assets/arrow.png"
-                    />
+                  <div class="d-flex align-items-center btn__arrow">
+                    <p class="mb-0 mr-2">DETAIL</p>
+                    <img src="./assets/arrow.png" />
                   </div>
                 </div>
                 <div class="room__type-title">
                   <h2>Single Room</h2>
-                  <div class="d-none d-md-block d-lg-none">
-                    <div class="d-flex align-items-center">
+                  <div class="room__type-discover">
+                    <div class="d-flex align-items-center btn__arrow">
                       <p style="color: #b52804" class="mb-0 mr-2">DETAIL</p>
-                      <img
-                        style="width: 80px; height: 4px"
-                        src="./assets/arrow.png"
-                      />
+                      <img src="./assets/arrow.png" />
                     </div>
                   </div>
                 </div>
-                <div class="room__type-price">
+                <div class="room__type-price d-none d-md-block">
                   <p style="font-weight: 200; font-size: 16px" class="mb-0">
                     Start from
                   </p>
@@ -300,7 +349,7 @@
             </div>
           </div>
           <div class="row justify-content-end">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 wow fadeInRight">
               <div class="room__type-wrapper room__type-right ml-auto">
                 <img class="img-fluid" src="./assets/room-type-2.png" />
                 <div
@@ -324,8 +373,14 @@
                 </div>
                 <div class="room__type-title">
                   <h2>Single Room</h2>
+                  <div class="room__type-discover">
+                    <div class="d-flex align-items-center btn__arrow">
+                      <p class="mb-0 mr-2">DETAIL</p>
+                      <img src="./assets/arrow.png" />
+                    </div>
+                  </div>
                 </div>
-                <div class="room__type-price">
+                <div class="room__type-price d-none d-md-block">
                   <p style="font-weight: 200; font-size: 16px" class="mb-0">
                     Start from
                   </p>
@@ -337,7 +392,7 @@
 
           <div class="row justify-content-start">
             <div class="col-md-1 d-none d-md-block"></div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 wow fadeInLeft">
               <div class="room__type-wrapper room__type-left">
                 <img class="img-fluid" src="./assets/room-type-3.png" />
                 <div
@@ -352,7 +407,7 @@
                     </p>
                   </div>
                   <div class="d-flex align-items-center">
-                    <p style="color: #b52804" class="mb-0 mr-2">DETAIL</p>
+                    <p class="mb-0 mr-2">DETAIL</p>
                     <img
                       style="width: 80px; height: 4px"
                       src="./assets/arrow.png"
@@ -361,8 +416,14 @@
                 </div>
                 <div class="room__type-title">
                   <h2>Family Room</h2>
+                  <div class="room__type-discover">
+                    <div class="d-flex align-items-center btn__arrow">
+                      <p class="mb-0 mr-2">DETAIL</p>
+                      <img src="./assets/arrow.png" />
+                    </div>
+                  </div>
                 </div>
-                <div class="room__type-price">
+                <div class="room__type-price d-none d-md-block">
                   <p style="font-weight: 200; font-size: 16px" class="mb-0">
                     Start from
                   </p>
@@ -375,22 +436,35 @@
       </section>
 
       <section>
-        <div class="text-center cta__wrapper">
+        <div class="text-center cta__wrapper py-6">
           <h1 class="cta__wrapper-title">Book your stay</h1>
           <p class="cta__wrapper-description">Find the best suit you</p>
-          <div class="d-flex justify-content-center">
-            <button class="btn btn-lg btn-primary" style="margin-right: 14px">
-              BOOK NOW
-            </button>
-            <button class="btn btn-lg btn-outline-primary">HOW TO BOOK</button>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-2">
+              <button
+                class="btn w-100 btn-lg btn-primary"
+                style="margin-right: 14px"
+              >
+                BOOK NOW
+              </button>
+            </div>
+            <div class="col-12 col-md-2">
+              <button class="btn w-100 btn-lg btn-outline-primary">
+                HOW TO BOOK
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
       <section>
-        <div class="row justify-content-between pr-6">
-          <div class="col-md-5 d-none d-md-block">
-            <img src="./assets/room-type-1.png" class="img-fluid" alt="" />
+        <div class="row justify-content-between pl-6 pr-6">
+          <div class="col-md-5 d-none d-md-block wow fadeInLeft">
+            <img
+              src="./assets/room-type-1.png"
+              class="img-fluid h-100"
+              alt=""
+            />
           </div>
           <div class="col-12 col-md-7 col-lg-6">
             <h2 style="color: #c0bcb7; font-weight: 500" class="pb-2">
@@ -402,91 +476,136 @@
               There are three options available to you, depending on your needs
               and purposes.
             </p>
-            <div class="d-flex align-items-center">
-              <p style="color: #b52804" class="mb-0 mr-2">MORE DETAIL</p>
-              <img style="width: 80px; height: 4px" src="./assets/arrow.png" />
+            <div class="d-flex align-items-center mt-4 btn__arrow">
+              <p class="mb-0 mr-2">MORE DETAIL</p>
+              <img src="./assets/arrow.png" />
             </div>
 
             <div
-              class="d-flex justify-content-between"
+              class="row justify-content-between facility__list-wrapper"
               style="padding-top: 40px; padding-right: 60px"
             >
-              <div>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="./assets/icons/wifi.png"
-                    style="width: 24px; height: 24px; margin-right: 14px"
-                  />
-                  <p style="font-size: 20px; font-weight: 300; margin: 0">
-                    Wifi
+              <div class="d-flex pb-4 col-12 col-md-5 align-items-center">
+                <div class="facility__description-wrapper">
+                  <p>
+                    At Seymour, robust and uninterrupted Wi-Fi networks enable
+                    our guests to access the internet speedily. You can find
+                    your Wi-Fi password at the reception. 
                   </p>
                 </div>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="./assets/icons/tv.png"
-                    style="width: 24px; height: 24px; margin-right: 14px"
-                  />
-                  <p style="font-size: 20px; font-weight: 300; margin: 0">
-                    Flat Screen TV
+                <img
+                  src="./assets/icons/wifi.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                <p style="font-size: 20px; font-weight: 300; margin: 0">Wifi</p>
+              </div>
+              <div class="d-flex pb-4 col-12 col-md-5 align-items-center">
+                <div class="facility__description-wrapper">
+                  <p>
+                    Free parking lots are conveniently located in front of each
+                    unit. Extra spots are available if required.
                   </p>
                 </div>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="./assets/icons/free-parking.png"
-                    style="width: 24px; height: 24px; margin-right: 14px"
-                  />
-                  <p style="font-size: 20px; font-weight: 300; margin: 0">
-                    Free Parking
+                <img
+                  src="./assets/icons/tv.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                <p style="font-size: 20px; font-weight: 300; margin: 0">
+                  Flat Screen TV
+                </p>
+              </div>
+              <div class="d-flex pb-4 col-12 col-md-5 align-items-center">
+                <div class="facility__description-wrapper">
+                  <p>
+                    We offer complimentary continental breakfasts as
+                    a self-serve service that starts between 7:00 AM and 9:00 AM
+                    seven days a week. 
                   </p>
                 </div>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="./assets/icons/air-condition.png"
-                    style="width: 24px; height: 24px; margin-right: 14px"
-                  />
-                  <p style="font-size: 20px; font-weight: 300; margin: 0">
-                    Air Conditioning
+                <img
+                  src="./assets/icons/free-parking.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                <p style="font-size: 20px; font-weight: 300; margin: 0">
+                  Free Parking
+                </p>
+              </div>
+              <div class="d-flex pb-4 col-12 col-md-5 align-items-center">
+                <div class="facility__description-wrapper">
+                  <p>
+                    An outdoor BBQ facility is provided to our guests which is
+                    located next to the swimming pool.
                   </p>
                 </div>
+                <img
+                  src="./assets/icons/air-condition.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                <p style="font-size: 20px; font-weight: 300; margin: 0">
+                  Air Conditioning
+                </p>
               </div>
               <!-- RIGHT -->
-              <div>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="./assets/icons/breakfast.png"
-                    style="width: 24px; height: 24px; margin-right: 14px"
-                  />
-                  <p style="font-size: 20px; font-weight: 300; margin: 0">
-                    Free Breakfast
+              <div class="d-flex pb-4 col-12 col-md-5 align-items-center">
+                <div class="facility__description-wrapper">
+                  <p>
+                    Each and every room in the Seymour Motel is equipped with a
+                    flat-screen TV, keeping the guests entertained during their
+                    stay. 
                   </p>
                 </div>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="./assets/icons/swimming.png"
-                    style="width: 24px; height: 24px; margin-right: 14px"
-                  />
-                  <p style="font-size: 20px; font-weight: 300; margin: 0">
-                    Swimming Pool
+                <img
+                  src="./assets/icons/breakfast.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                <p style="font-size: 20px; font-weight: 300; margin: 0">
+                  Free Breakfast
+                </p>
+              </div>
+              <div class="d-flex pb-4 col-12 col-md-5 align-items-center">
+                <div class="facility__description-wrapper">
+                  <p>
+                    All rooms are equipped with proper air conditioning
+                    systems and are in good maintenance.
                   </p>
                 </div>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="./assets/icons/bbq.png"
-                    style="width: 24px; height: 24px; margin-right: 14px"
-                  />
-                  <p style="font-size: 20px; font-weight: 300; margin: 0">
-                    Free BBQ Facility
+                <img
+                  src="./assets/icons/swimming.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                <p style="font-size: 20px; font-weight: 300; margin: 0">
+                  Swimming Pool
+                </p>
+              </div>
+              <div class="d-flex pb-4 col-12 col-md-5 align-items-center">
+                <div class="facility__description-wrapper">
+                  <p>
+                    Seymour's perfectly set swimming pool, open all year, has
+                    everything you need to feel refreshed.
                   </p>
                 </div>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="./assets/icons/bathroom.png"
-                    style="width: 24px; height: 24px; margin-right: 14px"
-                  />
-                  <p style="font-size: 20px; font-weight: 300; margin: 0">
-                    Private Bathroom
+                <img
+                  src="./assets/icons/bbq.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                <p style="font-size: 20px; font-weight: 300; margin: 0">
+                  Free BBQ Facility
+                </p>
+              </div>
+              <div class="d-flex pb-4 col-12 col-md-5 align-items-center">
+                <div class="facility__description-wrapper">
+                  <p>
+                    All of the bathrooms are well-equipped and well-maintained,
+                    ensuring complete sanitation.
                   </p>
                 </div>
+                <img
+                  src="./assets/icons/bathroom.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                <p style="font-size: 20px; font-weight: 300; margin: 0">
+                  Private Bathroom
+                </p>
               </div>
             </div>
           </div>
@@ -499,9 +618,9 @@
             <h2 style="color: #c0bcb7; font-weight: 500" class="pb-2">
               Local Attraction
             </h2>
-            <div class="d-flex align-items-center">
-              <p style="color: #b52804" class="mb-0 mr-2">SEE MORE</p>
-              <img style="width: 80px; height: 4px" src="./assets/arrow.png" />
+            <div class="d-flex align-items-center btn__arrow">
+              <p class="mb-0 mr-2">SEE MORE</p>
+              <img src="./assets/arrow.png" />
             </div>
           </div>
           <div class="col-12 col-md-5">
@@ -518,75 +637,95 @@
         </div>
       </section>
 
-      <section>
-        <div class="d-flex justify-content-end" style="padding-left: 60px">
-          <div class="text-right pr-4">
-            <p style="color: #c0bcb7" class="mb-0">Previous</p>
-            <img
-              style="width: 80px; height: 4px"
-              src="./assets/left-arrow.png"
-            />
+      <div class="splide-2 pl-6">
+        <div class="splide__arrows d-flex justify-content-end pr-6">
+          <div class="text-right pr-4 slide__btn slide__btn-prev">
+            <p class="mb-0">Previous</p>
+            <svg
+              width="88"
+              height="6"
+              viewBox="0 0 88 6"
+              fill="#E9E6E5"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 3L5 0.113249V5.88675L0 3ZM88 3.5H4.5V2.5H88V3.5Z" />
+            </svg>
           </div>
-          <div class="text-left">
-            <p style="color: #c0bcb7" class="mb-0">Next</p>
-            <img
-              style="width: 80px; height: 4px"
-              src="./assets/right-arrow.png"
-            />
-          </div>
-        </div>
-        <div class="d-flex no-wrap" style="margin-left: 60px; overflow-y: auto">
-          <div class="mr-4">
-            <div>
-              <img
-                src="./assets/Rectangle 19.png"
-                alt=""
-                style="margin-bottom: 24px; height: 340px; width: 430px"
-              />
-            </div>
-            <h3>Wonderful Town</h3>
-          </div>
-          <div class="mr-4">
-            <div>
-              <img
-                src="./assets/Rectangle 19-2.png"
-                alt=""
-                style="margin-bottom: 24px; height: 340px; width: 430px"
-              />
-            </div>
-            <h3>Wonderful Town</h3>
-          </div>
-          <div class="mr-4">
-            <div>
-              <img
-                src="./assets/Rectangle 19-2.png.png"
-                alt=""
-                style="margin-bottom: 24px; height: 340px; width: 430px"
-              />
-            </div>
-            <h3>Wonderful Town</h3>
-          </div>
-          <div class="mr-4">
-            <div>
-              <img
-                src="./assets/Rectangle 19.png"
-                alt=""
-                style="margin-bottom: 24px; height: 340px; width: 430px"
-              />
-            </div>
-            <h3>Wonderful Town</h3>
+          <div class="text-left slide__btn-next slide__btn">
+            <p class="mb-0">Next</p>
+            <svg
+              width="88"
+              height="6"
+              viewBox="0 0 88 6"
+              fill="#E9E6E5"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M88 3L83 0.113249V5.88675L88 3ZM0 3.5H83.5V2.5H0V3.5Z" />
+            </svg>
           </div>
         </div>
-      </section>
+        <div class="splide__track home__banner-wrapper">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="local__item-wrapper">
+                <div>
+                  <img
+                    src="./assets/Rectangle 19.png"
+                    alt=""
+                    style="margin-bottom: 24px; height: 340px; width: 430px"
+                  />
+                </div>
+                <h3>Wonderful Town</h3>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="local__item-wrapper">
+                <div>
+                  <img
+                    src="./assets/Rectangle 19-1.png"
+                    alt=""
+                    style="margin-bottom: 24px; height: 340px; width: 430px"
+                  />
+                </div>
+                <h3>Sport & Recreation</h3>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="local__item-wrapper">
+                <div>
+                  <img
+                    src="./assets/Rectangle 19-2.png"
+                    alt=""
+                    style="margin-bottom: 24px; height: 340px; width: 430px"
+                  />
+                </div>
+                <h3>Interesting Events</h3>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="local__item-wrapper">
+                <div>
+                  <img
+                    src="./assets/Rectangle 30.png"
+                    alt=""
+                    style="margin-bottom: 24px; height: 340px; width: 430px"
+                  />
+                </div>
+                <h3>Wonderful Town</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <section>
         <div class="d-flex justify-content-between px-6 py-6">
           <h2 style="color: #c0bcb7; font-weight: 500" class="pb-2">
             Happy customer
           </h2>
-          <div class="d-flex align-items-center justify-content-end">
-            <p style="color: #b52804" class="mb-0">READ MORE</p>
-            <img style="width: 80px; height: 4px" src="./assets/arrow.png" />
+          <div class="d-flex align-items-center justify-content-end btn__arrow">
+            <p class="mb-0">READ MORE</p>
+            <img src="./assets/arrow.png" />
           </div>
         </div>
         <div class="row" style="padding: 60px; padding-top: 0">
@@ -659,7 +798,7 @@
 
       <section>
         <div class="row justify-content-between px-6 py-6">
-          <div class="col-12 col-md-3">
+          <div class="col-12 col-md-3 pb-4">
             <h2 class="seymour-title">Gallery</h2>
           </div>
           <div class="col-12 col-md-9">
@@ -715,6 +854,39 @@
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log(`WOW`, WOW);
+        new WOW().init();
+        var splide = new Splide(".splide", {
+          arrows: false,
+          type: "loop",
+          pagination: false,
+        });
+        splide.mount();
+        $(".splide .slide__btn-prev").on("click", () => {
+          splide.go("<");
+        });
+        $(".splide .slide__btn-next").on("click", () => {
+          splide.go(">");
+        });
+
+        var splide2 = new Splide(".splide-2", {
+          arrows: false,
+          type: "loop",
+          perPage: 3,
+          pagination: false,
+        });
+        splide2.mount();
+        $(".splide-2 .slide__btn-prev").on("click", () => {
+          splide2.go("<");
+        });
+        $(".splide-2 .slide__btn-next").on("click", () => {
+          splide2.go(">");
+        });
+      });
+    </script>
+
     <script>
       window.jQuery ||
         document.write(

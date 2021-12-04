@@ -1,8 +1,8 @@
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
-rapper .convention__wrapper-title {
+.rapper .convention__wrapper-title {
   color: #c0bcb7;
   padding: 16px 0;
 }
@@ -17,11 +17,24 @@ rapper .convention__wrapper-title {
   margin-bottom: 160px;
 }
 
+.room__type-wrapper img {
+  height: 400px;
+}
+
+.room__type-wrapper .room__type-discover {
+  display: none;
+}
+
+.room__type-wrapper:hover .room__type-discover {
+  display: block;
+}
+
 .room__type-wrapper .room__type-title {
   padding: 16px 24px;
   background-color: white;
   position: absolute;
   top: 0;
+  font-weight: bold;
 }
 .room__type-wrapper .room__type-price {
   position: absolute;
@@ -51,6 +64,7 @@ rapper .convention__wrapper-title {
   .room__type-left .room__type-title {
     right: 0;
     transform: translate(50%, 0px);
+    padding: 34px 0px 34px 112px;
   }
 
   .room__type-left .room__type-price {
@@ -62,6 +76,7 @@ rapper .convention__wrapper-title {
   .room__type-right .room__type-title {
     left: 0;
     transform: translate(-50%, 0px);
+    padding: 34px 112px 34px 0px;
   }
 
   .room__type-right .room__type-price {
@@ -73,7 +88,6 @@ rapper .convention__wrapper-title {
 
 .cta__wrapper {
   background-color: #e9e6e5;
-  padding: 120px 0;
 }
 
 .cta__wrapper .cta__wrapper-title {
@@ -96,18 +110,13 @@ rapper .convention__wrapper-title {
 .home__banner-wrapper {
   width: 100%;
   height: 480px;
-}
-.home__banner-wrapper .home__banner-item {
-  width: 100%;
-  height: 100%;
   position: relative;
 }
-.home__banner-wrapper .home__banner-item .home__banner-title {
+.home__banner-wrapper .home__banner-title {
   position: absolute;
-  background-color: white;
-  right: 0;
-  padding: 40px 0 40px 120px;
+
   top: 50%;
+  z-index: 9;
 }
 .home__banner-wrapper .home__banner-item .accomodation__banner-title {
   position: absolute;
@@ -117,6 +126,107 @@ rapper .convention__wrapper-title {
   bottom: 0;
 }
 
+.btn__arrow {
+  padding: 0.5rem 0;
+}
+
+.btn__arrow p {
+  font-weight: bold;
+  color: #b52804;
+  cursor: pointer;
+  margin-right: 14px;
+  font-size: 20px;
+  box-sizing: border-box;
+  /* transition: all ease-in 300ms; */
+}
+
+.btn__arrow img {
+  width: 80px;
+  height: 4px;
+}
+
+.btn__arrow:hover p {
+  font-weight: 200;
+  border-bottom: 1px solid #b52804;
+}
+
+.btn__arrow:hover img {
+  width: 40px;
+}
+
+.slide__btn {
+  cursor: pointer;
+  color: #e9e8e5;
+}
+
+.slide__btn p {
+  font-size: 20px;
+}
+
+.slide__btn > svg {
+  margin-top: -12px;
+}
+
+.slide__btn:hover {
+  color: #c0bcb7;
+}
+
+.slide__btn:hover > svg {
+  fill: #c0bcb7;
+}
+
 main > section {
   padding-bottom: 120px;
+}
+
+.home__sticky-address {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  padding: 40px 120px;
+  z-index: 9;
+  color: #c0bcb7;
+}
+
+.home__sticky-address:hover p {
+  text-decoration: underline;
+  color: #222222;
+}
+
+.facility__list-wrapper {
+  position: relative;
+}
+
+.facility__list-wrapper .facility__description-wrapper {
+  display: none;
+  position: absolute;
+  width: 100%;
+  /* height: 200px; */
+  top: 0;
+  z-index: 9;
+  background-color: #fff;
+  padding: 0 14px;
+  font-weight: 200;
+}
+.facility__list-wrapper > div {
+  cursor: pointer;
+}
+.facility__list-wrapper
+  > div:hover:nth-child(odd)
+  > .facility__description-wrapper {
+  display: block;
+  left: 140%;
+  border-left: 1px solid #c0bcb7;
+  text-align: left;
+}
+
+.facility__list-wrapper
+  > div:hover:nth-child(even)
+  > .facility__description-wrapper {
+  display: block;
+  right: 140%;
+  z-index: 9;
+  border-right: 1px solid #c0bcb7;
+  text-align: right;
 }
