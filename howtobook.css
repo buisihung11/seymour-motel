@@ -17,6 +17,8 @@
   color: #000;
 }
 .card-header .accicon {
+  transition: all ease-in 300ms;
+  text-align: center;
   float: right;
   font-size: 20px;
   width: 1.2em;
@@ -27,10 +29,14 @@
   background-color: inherit;
 }
 
-.card-header:not(.collapsed) .rotate-icon {
-  transform: rotate(180deg);
+.card-header:not(.collapsed) .accicon {
+  transform: rotate(-180deg);
 }
 
-main > section {
-  padding: 120px 0;
+.howtobook__help-wrapper input {
+  width: 100%;
+}
+
+.howtobook__help-wrapper input:not(:last-child) {
+  margin-bottom: 48px;
 }

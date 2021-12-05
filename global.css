@@ -46,8 +46,20 @@ p {
 .seymour-input {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #222222;
+  border-bottom: 1px solid #c0bcb7;
   padding: 16px;
+  font-weight: 200;
+}
+
+.seymour-input::placeholder {
+  color: #c0bcb7;
+}
+.seymour-input:focus {
+  border-bottom: 1px solid #222222;
+  outline: none;
+}
+.seymour-input:focus::placeholder {
+  color: #222222;
 }
 
 .px-6 {
