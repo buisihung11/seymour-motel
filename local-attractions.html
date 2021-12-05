@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
+
+    <title>Seymour motel</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/"
+    />
+
+    <link rel="stylesheet" href="./dist/css/bootstrap.css" />
+
+    <!-- Bootstrap core CSS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="./dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="./dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom styles for this template -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,200;0,300;0,400;0,700;1,200;1,700&family=Rozha+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css"
+    />
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand logo__wrapper p-4" href="/">
+          <img class="logo" src="./assets/logo.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./accomodation.html"
+                >Accommodations <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./how-to-book.html">How to book?</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/privacy.html"
+                id="dropdown03"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >About</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                <li>
+                  <a class="dropdown-item" href="/privacy.html">Privacy</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="btn btn-outline-primary btn-lg mr-2">
+            Call us +61 3 5792 1500
+          </button>
+          <a href="https://useross.com/booking.php?dialog=motel&motel_id=433">
+            <button class="btn btn-primary btn-lg">BOOK NOW</button>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main">
+      <!-- WELCOME -->
+
+      <section>
+        <section class="row justify-content-between pb-5 pl-6">
+          <div class="col-12 col-md-8 col-lg-4 align-self-end">
+            <h1 class="rozha-font">Local Attractions</h1>
+            <p>
+              Seymour Motel is located in a prime location alongside the Hume
+              Highway, Mitchel Shire – Country Victoria. Seymour is a beautiful
+              town located on the banks of the wonderful Goulburn River. You can
+              reach this charming town within an hours’ drive from Melbourne
+              city along the Hume Highway.
+            </p>
+          </div>
+          <div class="col-12 col-md-8 col-lg-7">
+            <img class="img-fluid" src="./assets/local-banner.png" alt="" />
+          </div>
+        </section>
+      </section>
+
+      <section class="local__gallery-wrapper px-6">
+        <div class="row justify-content-end">
+          <div class="col-6 col-md-4">
+            <img
+              src="./assets/local-gallery/local-1.png"
+              alt=""
+              class="img-fluid"
+            />
+            <p class="pt-4">Snowfields</p>
+          </div>
+          <div class="col-6 col-md-4">
+            <img
+              src="./assets/local-gallery/local-2.png"
+              alt=""
+              class="img-fluid"
+            />
+            <p class="pt-4">Galleries & Exhibition</p>
+          </div>
+        </div>
+        <div class="row justify-content-start">
+          <div class="col-6 col-md-4">
+            <img
+              src="./assets/local-gallery/local-3.png"
+              alt=""
+              class="img-fluid"
+            />
+            <p class="pt-4">History & Heritage</p>
+          </div>
+          <div class="col-6 col-md-4">
+            <img
+              src="./assets/local-gallery/local-4.png"
+              alt=""
+              class="img-fluid"
+            />
+            <p class="pt-4">Fishing</p>
+          </div>
+        </div>
+        <div class="row justify-content-start">
+          <div class="col-6 col-md-4">
+            <img
+              src="./assets/local-gallery/local-5.png"
+              alt=""
+              class="img-fluid"
+            />
+            <p class="pt-4">River Activities</p>
+          </div>
+          <div class="col-6 col-md-4">
+            <img
+              src="./assets/local-gallery/local-6.png"
+              alt=""
+              class="img-fluid"
+            />
+            <p class="pt-4">Great Outdoors</p>
+          </div>
+          <div class="col-6 col-md-4">
+            <img
+              src="./assets/local-gallery/local-7.png"
+              alt=""
+              class="img-fluid"
+            />
+            <p class="pt-4">Sport & Leisure</p>
+          </div>
+        </div>
+        <div class="row justify-content-start">
+          <div class="col-6 col-md-4">
+            <img
+              src="./assets/local-gallery/local-8.png"
+              alt=""
+              class="img-fluid"
+            />
+            <p class="pt-4">Activity Trails</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="text-center cta__wrapper py-6">
+          <h1 class="cta__wrapper-title">Book your stay</h1>
+          <p class="cta__wrapper-description">Find the best suit you</p>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-2">
+              <a
+                href="https://useross.com/booking.php?dialog=motel&motel_id=433"
+              >
+                <button
+                  class="btn w-100 btn-lg btn-primary"
+                  style="margin-right: 14px"
+                >
+                  BOOK NOW
+                </button>
+              </a>
+            </div>
+            <div class="col-12 col-md-2">
+              <a href="./how-to-book.html">
+                <button class="btn w-100 btn-lg btn-outline-primary">
+                  HOW TO BOOK
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row justify-content-between px-6 py-6">
+          <div class="col-12 col-md-3 pb-4">
+            <h2 class="seymour-title">Gallery</h2>
+          </div>
+          <div class="col-12 col-md-9">
+            <div class="row no-wrap">
+              <div class="col-6 col-md-4 pb-4">
+                <img src="./assets/gallery-1.png" alt="" class="img-fluid" />
+              </div>
+              <div class="col-6 col-md-4 pb-4">
+                <img src="./assets/gallery-2.png" alt="" class="img-fluid" />
+              </div>
+              <div class="col-6 col-md-4 pb-4">
+                <img src="./assets/gallery-3.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- END WELCOME -->
+    </main>
+
+    <footer class="footer" style="padding: 0 60px">
+      <div
+        class="row align-items-center"
+        style="padding: 24px 0px; border-top: 1px solid #c0bcb7"
+      >
+        <div class="col-3">
+          <p style="text-decoration: underline; color: #222222">
+            Privacy policy
+          </p>
+          <p style="color: #c0bcb7">
+            ©2020 Seymour Motel. All Rights Reserved.
+          </p>
+        </div>
+        <div class="text-center col">
+          <img class="mr-1" src="./assets/instagram.png" alt="" />
+          <img class="" src="./assets/facebook.png" alt="" />
+        </div>
+        <div class="col-2">
+          <p style="color: #c0bcb7; text-align: left">
+            144 Goulburn Valley Hwy, <br />
+            Seymour, VIC 3660
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log(`WOW`, WOW);
+        new WOW().init();
+        var splide = new Splide(".splide", {
+          arrows: false,
+          type: "loop",
+          pagination: false,
+        });
+        splide.mount();
+        $(".splide .slide__btn-prev").on("click", () => {
+          splide.go("<");
+        });
+        $(".splide .slide__btn-next").on("click", () => {
+          splide.go(">");
+        });
+
+        var splide2 = new Splide(".splide-2", {
+          arrows: false,
+          type: "loop",
+          perPage: 3,
+          pagination: false,
+        });
+        splide2.mount();
+        $(".splide-2 .slide__btn-prev").on("click", () => {
+          splide2.go("<");
+        });
+        $(".splide-2 .slide__btn-next").on("click", () => {
+          splide2.go(">");
+        });
+      });
+    </script>
+
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>'
+        );
+    </script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

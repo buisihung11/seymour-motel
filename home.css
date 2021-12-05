@@ -175,8 +175,12 @@ body {
   fill: #c0bcb7;
 }
 
+main {
+  padding-top: 120px;
+}
+
 main > section {
-  padding-bottom: 120px;
+  padding-bottom: 200px;
 }
 
 .home__sticky-address {
@@ -229,4 +233,10 @@ main > section {
   z-index: 9;
   border-right: 1px solid #c0bcb7;
   text-align: right;
+}
+
+/* LOCAL ACCTRATIONS */
+
+.local__gallery-wrapper .row:not(:last-child) {
+  padding-bottom: 160px;
 }
