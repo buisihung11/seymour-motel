@@ -220,7 +220,7 @@ main > section {
   > div:hover:nth-child(odd)
   > .facility__description-wrapper {
   display: block;
-  left: 140%;
+  left: 100%;
   border-left: 1px solid #c0bcb7;
   text-align: left;
 }
@@ -229,7 +229,7 @@ main > section {
   > div:hover:nth-child(even)
   > .facility__description-wrapper {
   display: block;
-  right: 140%;
+  right: 100%;
   z-index: 9;
   border-right: 1px solid #c0bcb7;
   text-align: right;
@@ -239,4 +239,53 @@ main > section {
 
 .local__gallery-wrapper .row:not(:last-child) {
   padding-bottom: 160px;
+}
+
+/* FACILITIES */
+
+.facilities__adrress-wrapper {
+  position: sticky;
+  top: 0;
+}
+.facilities__adrress-wrapper .facilities__adrress-inner {
+  position: relative;
+}
+
+.facilities__adrress-wrapper
+  .facilities__adrress-inner
+  .facilities__adrress-content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 40px 0 40px 112px;
+  background-color: #fff;
+}
+
+.facilities__adrress-content:hover {
+  color: #222222;
+  text-decoration: underline;
+}
+
+.facilities__group-wrapper .facilities__group-title {
+  padding-bottom: 32px;
+}
+
+.facilities__group-wrapper
+  .facility__list-wrapper
+  > div:hover:nth-child(even)
+  > .facility__description-wrapper {
+  display: block;
+  left: 100%;
+  z-index: 9;
+  border-left: 1px solid #c0bcb7;
+  text-align: left;
+}
+
+.facilities__group-wrapper:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.facilities__group-wrapper .facilities__group-title {
+  color: #c0bcb7;
+  font-weight: 500;
 }
