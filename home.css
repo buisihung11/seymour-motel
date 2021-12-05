@@ -128,14 +128,15 @@ body {
 
 .btn__arrow {
   padding: 0.5rem 0;
+  height: 43px;
 }
 
 .btn__arrow p {
-  font-weight: bold;
+  font-weight: 600;
   color: #b52804;
   cursor: pointer;
   margin-right: 14px;
-  font-size: 20px;
+  font-size: 18px;
   box-sizing: border-box;
   /* transition: all ease-in 300ms; */
 }
@@ -146,7 +147,7 @@ body {
 }
 
 .btn__arrow:hover p {
-  font-weight: 200;
+  font-weight: 400;
   border-bottom: 1px solid #b52804;
 }
 
