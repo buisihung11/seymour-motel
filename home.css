@@ -183,6 +183,22 @@ main > section {
   padding-bottom: 200px;
 }
 
+.local__item-wrapper:hover img {
+  transition: all ease-in-out 300ms;
+  opacity: 0.7;
+}
+.local__item-wrapper:hover p {
+  visibility: visible;
+}
+
+.local__item-wrapper:hover h3 {
+  color: #b52804;
+}
+
+.local__item-wrapper p {
+  visibility: hidden;
+}
+
 .home__sticky-address {
   position: fixed;
   right: 0;
