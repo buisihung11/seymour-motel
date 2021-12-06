@@ -344,3 +344,47 @@ main > section {
   color: #c0bcb7;
   font-weight: 500;
 }
+
+/* LOCATION */
+.location__nav-wrapper {
+  margin-bottom: 120px;
+}
+
+.location__nav-wrapper .location__nav-item {
+  color: #c0bcb7;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.location__nav-wrapper .location__nav-item.active {
+  color: #222222;
+}
+
+.location__nav-wrapper .location__nav-item:hover {
+  color: #222222;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.location__map-wrapper {
+  position: relative;
+}
+
+.location__map-popup {
+  background-color: #fff;
+  padding: 56px;
+  position: absolute;
+  left: 120px;
+  top: 60px;
+  max-width: 540px;
+  display: none;
+}
+
+.location__map-popup.active {
+  display: block;
+}
+
+.location__map-popup .location__map-popup-sub {
+  font-size: 20px;
+  font-weight: 300;
+}
