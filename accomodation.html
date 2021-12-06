@@ -121,297 +121,380 @@
       </nav>
     </header>
     <!-- Begin page content -->
-    <main role="main">
-      <!-- WELCOME -->
-
-      <section>
+    <main class="main">
+      <section class="main-container">
         <div class="mx-auto text-center py-5" style="width: 680px">
           <h1 class="rozha-font">Accommodation</h1>
         </div>
-        <div style="padding-left: 60px; padding-right: 60px">
-          <div class="d-flex justify-content-center">
-            <div class="text-right pr-4">
-              <p style="color: #c0bcb7" class="mb-0">Previous</p>
-              <img
-                style="width: 80px; height: 4px"
-                src="./assets/left-arrow.png"
-              />
+        <!-- arrow controls -->
+        <div class="splide px-6">
+          <div class="splide__arrows d-flex justify-content-center">
+            <div class="text-right pr-4 slide__btn slide__btn-prev">
+              <p class="mb-0">Previous</p>
+              <svg
+                width="88"
+                height="6"
+                viewBox="0 0 88 6"
+                fill="#E9E6E5"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 3L5 0.113249V5.88675L0 3ZM88 3.5H4.5V2.5H88V3.5Z" />
+              </svg>
             </div>
-            <div class="text-left">
-              <p style="color: #c0bcb7" class="mb-0">Next</p>
-              <img
-                style="width: 80px; height: 4px"
-                src="./assets/right-arrow.png"
-              />
+            <div class="text-left slide__btn-next slide__btn">
+              <p class="mb-0">Next</p>
+              <svg
+                width="88"
+                height="6"
+                viewBox="0 0 88 6"
+                fill="#E9E6E5"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M88 3L83 0.113249V5.88675L88 3ZM0 3.5H83.5V2.5H0V3.5Z"
+                />
+              </svg>
             </div>
           </div>
-          <div class="home__banner-wrapper">
-            <div class="home__banner-item">
-              <div class="accomodation__banner-title">
-                <h4
-                  class="rozha-font"
-                  style="font-weight: 200; text-align: center; font-size: 64px"
-                >
-                  Single Room
-                </h4>
-              </div>
-              <img src="./assets/banner.png" alt="" class="img-fluid" />
+
+          <div class="splide__track home__banner-wrapper">
+            <div class="slider__title">
+              <h2 class="rozha-font">
+                <?php echo ucwords(get_the_title()); ?>
+              </h2>
             </div>
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/banner1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/banner2.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/banner3.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/banner4.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section style="padding-top: 260px">
-        <div style="padding: 0 60px; position: relative">
-          <div
-            style="background-color: #e9e6e5; padding: 64px 112px; width: 870px"
-          >
-            <p style="font-size: 20px">Start from</p>
-            <p style="font-size: 20px; color: #b52804">$110 / night</p>
-            <p class="py-4" style="font-weight: 200">
+      <section class="main__banner">
+        <div class="main__banner_wrapper">
+          <div class="main__banner_info">
+            <div>Start from</div>
+            <div class="main__banner_info-price">$110 / night</div>
+            <div class="main__banner_info-text">
               These rooms have been designed specifically to meet the needs of
               individuals. They are extremely comfortable, allowing you to begin
               a new "next day" with a positive mindset. The gentle touch of
               nature in a calm and quiet environment can be a great relief for
               your's tiredness.
-            </p>
-
-            <div class="d-flex">
-              <div class="d-flex align-items-center" style="margin-right: 40px">
-                <img src="./assets/tick.png" alt="" class="pr-2" />
-                <p>Free breakfast</p>
-              </div>
-              <div class="d-flex align-items-center">
-                <img src="./assets/tick.png" alt="" class="pr-2" />
-                <p>Free Parking</p>
-              </div>
             </div>
-            <div class="d-flex" style="margin-top: 40px">
-              <button class="btn btn-primary btn-lg mr-4">BOOK NOW</button>
-              <button class="btn btn-outline-primary btn-lg mr-2">
-                How to book
-              </button>
+            <div class="main__banner_info-benefit">
+              <span>
+                <img
+                  src="<?php bloginfo('template_directory'); ?>/icons/tick.png"
+                />
+                Free Breakfast
+              </span>
+              <span>
+                <img
+                  src="<?php bloginfo('template_directory'); ?>/icons/tick.png"
+                />
+                Free Parking
+              </span>
+            </div>
+            <div class="main__banner_info-button flex-button">
+              <div class="tol_no danger">
+                <p>BOOK NOW</p>
+              </div>
+              <div class="tol_no un-danger">
+                <p>HOW TO BOOK</p>
+              </div>
             </div>
           </div>
-          <div
-            style="
-              position: absolute;
-              width: 760px;
-              height: 470px;
-              top: 40px;
-              right: 60px;
-            "
-          >
+          <div class="main__banner_img">
+            <?php $back_image = (get_field('banner_image')) ? get_field('banner_image') : get_bloginfo('template_directory') . "/images/static-bg.jpg"; ?>
             <img
-              style="width: 100%"
-              src="./assets/room-type-1.png"
-              alt=""
-              class="img-fluid"
+              src="<?php echo $back_image; ?>"
+              style="width: 100%; height: 100%"
             />
           </div>
         </div>
       </section>
 
-      <section style="padding-top: 200px">
-        <div style="text-align: center">
-          <h2 style="color: #c0bcb7; font-weight: 500" class="pb-2">
-            More options
-          </h2>
-        </div>
-        <div
-          class="d-flex justify-content-between"
-          style="padding: 60px 0; padding-bottom: 200px"
-        >
-          <div>
-            <div style="width: 680px; padding: 54px 0 60px 54px">
-              <div>
-                <h2 style="color: #c0bcb7; font-weight: 500" class="pb-2">
-                  Highlight
-                </h2>
-                <p style="font-weight: 200">
-                  People always don’t travel in groups – some travel alone for
-                  various reasons.
-                </p>
-              </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-end">
-              <p style="color: #b52804" class="mb-0">DISCOVER</p>
-              <img style="width: 80px; height: 4px" src="./assets/arrow.png" />
-            </div>
-          </div>
-
-          <div style="width: 600px; height: 800px; position: relative">
-            <img src="./assets/welcome1.png" class="img-fluid" />
-            <div
-              style="
-                width: 425px;
-                height: 560px;
-                position: absolute;
-                left: -40%;
-                top: 60%;
-              "
-            >
-              <img src="./assets/welcome2.png" class="img-fluid" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section style="padding-top: 160px">
-        <div class="d-flex justify-content-between">
-          <div style="width: 540px; padding-left: 60px">
-            <h2 style="color: #c0bcb7; font-weight: 500" class="pb-2">
-              Facility
-            </h2>
-            <p style="font-weight: 200">
-              Seymour Motel is an ideal rest stop for travelers as well as a
-              wonderful place to stay while exploring the town's true beauty.
-              There are three options available to you, depending on your needs
-              and purposes.
+      <section class="main__highlight">
+        <h2>Room HighLight</h2>
+        <div class="main__highlight_container">
+          <div class="main__highlight_container-highlight">
+            <h3>Highlight</h3>
+            <p>
+              People always don’t travel in groups – some travel alone for
+              various reasons.
             </p>
-            <div class="d-flex align-items-center">
-              <p style="color: #b52804" class="mb-0 mr-2">MORE DETAIL</p>
-              <img style="width: 80px; height: 4px" src="./assets/arrow.png" />
-            </div>
-
-            <div
-              class="d-flex justify-content-between"
-              style="padding-top: 40px; padding-right: 60px"
-            >
-              <div>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="./assets/icons/wifi.png"
-                    style="width: 24px; height: 24px; margin-right: 14px"
-                  />
-                  <p style="font-size: 20px; font-weight: 300; margin: 0">
-                    Wifi
-                  </p>
-                </div>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="./assets/icons/tv.png"
-                    style="width: 24px; height: 24px; margin-right: 14px"
-                  />
-                  <p style="font-size: 20px; font-weight: 300; margin: 0">
-                    Flat Screen TV
-                  </p>
-                </div>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="./assets/icons/free-parking.png"
-                    style="width: 24px; height: 24px; margin-right: 14px"
-                  />
-                  <p style="font-size: 20px; font-weight: 300; margin: 0">
-                    Free Parking
-                  </p>
-                </div>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="./assets/icons/air-condition.png"
-                    style="width: 24px; height: 24px; margin-right: 14px"
-                  />
-                  <p style="font-size: 20px; font-weight: 300; margin: 0">
-                    Air Conditioning
-                  </p>
-                </div>
-              </div>
-              <!-- RIGHT -->
-              <div>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="./assets/icons/breakfast.png"
-                    style="width: 24px; height: 24px; margin-right: 14px"
-                  />
-                  <p style="font-size: 20px; font-weight: 300; margin: 0">
-                    Free Breakfast
-                  </p>
-                </div>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="./assets/icons/swimming.png"
-                    style="width: 24px; height: 24px; margin-right: 14px"
-                  />
-                  <p style="font-size: 20px; font-weight: 300; margin: 0">
-                    Swimming Pool
-                  </p>
-                </div>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="./assets/icons/bbq.png"
-                    style="width: 24px; height: 24px; margin-right: 14px"
-                  />
-                  <p style="font-size: 20px; font-weight: 300; margin: 0">
-                    Free BBQ Facility
-                  </p>
-                </div>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="./assets/icons/bathroom.png"
-                    style="width: 24px; height: 24px; margin-right: 14px"
-                  />
-                  <p style="font-size: 20px; font-weight: 300; margin: 0">
-                    Private Bathroom
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
-          <div style="width: auto; height: 480px">
-            <img src="./assets/room-type-1.png" class="img-fluid" alt="" />
+          <div class="main__highlight_container-img1">
+            <img
+              src="http://www.seymourmotel.com/wp-content/uploads/2021/12/accommodation1.png"
+              alt=""
+            />
+          </div>
+          <div class="main__highlight_container-img2">
+            <img
+              src="http://www.seymourmotel.com/wp-content/uploads/2021/12/accommodation2.png"
+              alt=""
+            />
+          </div>
+          <div class="main__highlight_container-img3">
+            <img
+              src="http://www.seymourmotel.com/wp-content/uploads/2021/12/accommodation3.png"
+              alt=""
+            />
+          </div>
+          <div class="main__highlight_container-highlight">
+            <h3>Who should choose this</h3>
+            <p>
+              For an individual traveller, hiring a double room is an unwanted
+              expenditure.
+            </p>
           </div>
         </div>
       </section>
 
-      <section>
-        <div style="text-align: center">
-          <h2 style="color: #c0bcb7; font-weight: 500" class="pb-2">
-            More options
-          </h2>
-        </div>
-        <div style="padding: 60px">
-          <div class="row" style="margin-bottom: 160px">
-            <div class="col-12 col-md-6">
-              <h2 style="color: #c0bcb7; font-weight: 500" class="pb-2">
-                Explore rooms & suites
-              </h2>
-              <p style="font-weight: 200">
-                Seymour is located next to the Hume Highway and is approximately
-                an hour away from Melbourne. Seymour Motel was the town's first
-                and remains one of the best in the area, offering perfectly
-                reasonable rates. The motel has expansive large blocks of land,
-                densely forested with magnificent gum trees and tranquil,
-                authentic Australian gardens.
-              </p>
-            </div>
-          </div>
+      <section class="main__facilities">
+        <div class="main__facilities-info">
+          <h3>Facilities</h3>
+          <p>
+            These rooms also have all the basic facilities in addition to the
+            safety and comfort.
+          </p>
+          <div class="main__facilities-benefit">
+            <ul>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/11/wifi.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                Wifi
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/11/tv.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                Flat Screen TV
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/microwave.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                Microwave
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/11/air-condition.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                Air Conditioning
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/wardrobe.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                Wardrobe
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/toaster.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                Toaster
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/tea.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                Tea & Coffee
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/11/bathroom.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                Private Bathroom
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/safe-area.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                Seating Area
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/blanket.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                Electric Blanket
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/toiletries.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+                Free toiletries
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/towel.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
 
-          <div class="px-6">
-            <div
-              data-wow-delay="500ms"
-              class="row justify-content-start wow fadeInLeft"
-            >
-              <div class="col-12 col-md-6">
-                <div class="room__type-wrapper room__type-left">
-                  <img
-                    class="img-fluid"
-                    src="http://www.seymourmotel.com/wp-content/uploads/2021/11/room-type-1.png"
-                  />
-                  <div
-                    class="
-                      d-block d-md-none d-flex
-                      justify-content-between
-                      w-100
-                    "
-                  >
-                    <div>
-                      <p style="font-weight: 200; font-size: 16px" class="mb-0">
-                        Start from
-                      </p>
-                      <p style="font-weight: 300; font-size: 20px">
-                        $110 / night
-                      </p>
-                    </div>
+                Towels
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/hair.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+
+                Hair Dryer
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/iron.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+
+                Iron & Iron board
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/shower.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+
+                Shower
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/refrigerator.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+
+                Refrigerator
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/electric.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+
+                Electric Kettle
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/kitchenware.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+
+                Kitchenware
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/garden.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+
+                Garden & Pool View
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/carpeted.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+
+                Carpeted Room
+              </li>
+              <li>
+                <img
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/linen.png"
+                  style="width: 24px; height: 24px; margin-right: 14px"
+                />
+
+                Linen
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main__facilities-img">
+          <?php if (get_field("cover_image")) : $image = get_field('cover_image');
+					$size1400 = wp_get_attachment_image_src($image['id'], 'Seymour-Image-Thumb'); ?>
+          <img
+            src="<?php echo $size1400[0]; ?>"
+            alt="<?php echo $image['alt']; ?>"
+            title="<?php echo $image['title']; ?>"
+            class="img-responsive"
+          />
+          <?php endif; ?>
+        </div>
+      </section>
+      <!-- More Options -->
+      <section>
+        <div class="px-6">
+          <div class="row justify-content-end">
+            <div class="col-12 col-md-6 wow fadeInRight">
+              <div class="room__type-wrapper room__type-right ml-auto">
+                <img
+                  class="img-fluid"
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/11/room-type-2.png"
+                />
+                <div
+                  class="d-block d-md-none d-flex justify-content-between w-100"
+                >
+                  <div>
+                    <p style="font-weight: 200; font-size: 16px" class="mb-0">
+                      Start from
+                    </p>
+                    <p style="font-weight: 300; font-size: 20px">
+                      $120 / night
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <p style="color: #b52804" class="mb-0 mr-2">DETAIL</p>
+                    <img
+                      style="width: 80px; height: 4px"
+                      src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
+                    />
+                  </div>
+                </div>
+                <div class="room__type-title">
+                  <h2>Twin Room</h2>
+                  <div class="room__type-discover">
                     <div class="d-flex align-items-center btn__arrow">
                       <p class="mb-0 mr-2">DETAIL</p>
                       <img
@@ -419,166 +502,67 @@
                       />
                     </div>
                   </div>
-                  <div class="room__type-title">
-                    <h2>Single Room</h2>
-                    <div class="room__type-discover">
-                      <a href="./accomodation.html">
-                        <div class="d-flex align-items-center btn__arrow">
-                          <p style="color: #b52804" class="mb-0 mr-2">DETAIL</p>
-                          <img
-                            src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
-                          />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="room__type-price d-none d-md-block">
-                    <p style="font-weight: 200; font-size: 16px" class="mb-0">
-                      Start from
-                    </p>
-                    <p style="font-weight: 300; font-size: 20px">
-                      $110 / night
-                    </p>
-                  </div>
+                </div>
+                <div class="room__type-price d-none d-md-block">
+                  <p style="font-weight: 200; font-size: 16px" class="mb-0">
+                    Start from
+                  </p>
+                  <p style="font-weight: 300; font-size: 20px">$120 / night</p>
                 </div>
               </div>
             </div>
-            <div class="row justify-content-end">
-              <div
-                data-wow-delay="500ms"
-                class="col-12 col-md-6 wow fadeInRight"
-              >
-                <div class="room__type-wrapper room__type-right ml-auto">
-                  <img
-                    class="img-fluid"
-                    src="http://www.seymourmotel.com/wp-content/uploads/2021/11/room-type-2.png"
-                  />
-                  <div
-                    class="
-                      d-block d-md-none d-flex
-                      justify-content-between
-                      w-100
-                    "
-                  >
-                    <div>
-                      <p style="font-weight: 200; font-size: 16px" class="mb-0">
-                        Start from
-                      </p>
-                      <p style="font-weight: 300; font-size: 20px">
-                        $110 / night
-                      </p>
-                    </div>
-                    <a href="./accomodation.html">
-                      <div class="d-flex align-items-center">
-                        <p style="color: #b52804" class="mb-0 mr-2">DETAIL</p>
-                        <img
-                          style="width: 80px; height: 4px"
-                          src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
-                        />
-                      </div>
-                    </a>
-                  </div>
-                  <div class="room__type-title">
-                    <h2>Single Room</h2>
-                    <div class="room__type-discover">
-                      <div class="d-flex align-items-center btn__arrow">
-                        <p class="mb-0 mr-2">DETAIL</p>
-                        <img
-                          src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="room__type-price d-none d-md-block">
-                    <p style="font-weight: 200; font-size: 16px" class="mb-0">
-                      Start from
-                    </p>
-                    <p style="font-weight: 300; font-size: 20px">
-                      $110 / night
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          </div>
 
-            <div class="row justify-content-start">
-              <div class="col-md-1 d-none d-md-block"></div>
-              <div
-                data-wow-delay="500ms"
-                class="col-12 col-md-6 wow fadeInLeft"
-              >
-                <div class="room__type-wrapper room__type-left">
-                  <img
-                    class="img-fluid"
-                    src="http://www.seymourmotel.com/wp-content/uploads/2021/11/room-type-3.png"
-                  />
-                  <div
-                    class="
-                      d-block d-md-none d-flex
-                      justify-content-between
-                      w-100
-                    "
-                  >
-                    <div>
-                      <p style="font-weight: 200; font-size: 16px" class="mb-0">
-                        Start from
-                      </p>
-                      <p style="font-weight: 300; font-size: 20px">
-                        $110 / night
-                      </p>
-                    </div>
-                    <div class="d-flex align-items-center">
+          <div class="row justify-content-start">
+            <div class="col-md-1 d-none d-md-block"></div>
+            <div class="col-12 col-md-6 wow fadeInLeft">
+              <div class="room__type-wrapper room__type-left">
+                <img
+                  class="img-fluid"
+                  src="http://www.seymourmotel.com/wp-content/uploads/2021/11/room-type-3.png"
+                />
+                <div
+                  class="d-block d-md-none d-flex justify-content-between w-100"
+                >
+                  <div>
+                    <p style="font-weight: 200; font-size: 16px" class="mb-0">
+                      Start from
+                    </p>
+                    <p style="font-weight: 300; font-size: 20px">
+                      $160 / night
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <p class="mb-0 mr-2">DETAIL</p>
+                    <img
+                      style="width: 80px; height: 4px"
+                      src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
+                    />
+                  </div>
+                </div>
+                <div class="room__type-title">
+                  <h2>Family Room</h2>
+                  <div class="room__type-discover">
+                    <div class="d-flex align-items-center btn__arrow">
                       <p class="mb-0 mr-2">DETAIL</p>
                       <img
-                        style="width: 80px; height: 4px"
                         src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
                       />
                     </div>
                   </div>
-                  <div class="room__type-title">
-                    <h2>Family Room</h2>
-                    <div class="room__type-discover">
-                      <div class="d-flex align-items-center btn__arrow">
-                        <p class="mb-0 mr-2">DETAIL</p>
-                        <img
-                          src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="room__type-price d-none d-md-block">
-                    <p style="font-weight: 200; font-size: 16px" class="mb-0">
-                      Start from
-                    </p>
-                    <p style="font-weight: 300; font-size: 20px">
-                      $110 / night
-                    </p>
-                  </div>
+                </div>
+                <div class="room__type-price d-none d-md-block">
+                  <p style="font-weight: 200; font-size: 16px" class="mb-0">
+                    Start from
+                  </p>
+                  <p style="font-weight: 300; font-size: 20px">$160 / night</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section>
-        <div class="d-flex justify-content-between" style="padding: 60px">
-          <h2 class="pb-2 seymour-title">Gallery</h2>
-          <div class="d-flex">
-            <div style="width: 321px; height: 321px">
-              <img src="./assets/gallery-1.png" alt="" class="img-fluid" />
-            </div>
-            <div style="width: 321px; height: 321px; margin: 0 14px">
-              <img src="./assets/gallery-2.png" alt="" class="img-fluid" />
-            </div>
-            <div style="width: 321px; height: 321px">
-              <img src="./assets/gallery-3.png" alt="" class="img-fluid" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- END WELCOME -->
+      <?php get_template_part('inc/gallery'); ?>
     </main>
 
     <footer class="footer" style="padding: 0 60px">
