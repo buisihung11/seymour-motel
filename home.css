@@ -252,6 +252,44 @@ main > section {
   text-align: right;
 }
 
+.home__facilities-wrapper {
+  position: relative;
+}
+.home__facilities-wrapper .home__facilities-item {
+  cursor: pointer;
+}
+
+.home__facilities-wrapper .facility__description-wrapper p {
+  display: none;
+}
+
+.home__facilities-popup {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  display: none;
+  background-color: #fff;
+  z-index: 9;
+  padding: 0 14px;
+  font-weight: 200;
+}
+
+.home__facilities-popup.enabled {
+  display: block;
+}
+
+.home__facilities-popup.popup-left {
+  left: 0;
+  border-right: 1px solid #c0bcb7;
+  text-align: right;
+}
+.home__facilities-popup.popup-right {
+  right: 0;
+  border-left: 1px solid #c0bcb7;
+  text-align: left;
+}
+
 /* LOCAL ACCTRATIONS */
 
 .local__gallery-wrapper .row:not(:last-child) {
