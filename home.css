@@ -148,6 +148,10 @@ a:hover {
   font-family: "Rozha One" !important;
 }
 
+.dropdown-menu {
+  border: none !important;
+}
+
 .seymour-input {
   background-color: transparent;
   border: none;
@@ -361,9 +365,10 @@ a:hover {
 .home__banner-wrapper .home__banner-item .accomodation__banner-title {
   position: absolute;
   background-color: white;
-  left: 20%;
-  padding: 14px 0 14px 0px;
+  left: 10%;
+  padding: 32px 60px;
   bottom: 0;
+  transform: translate(0, 50%);
 }
 .slider__title {
   text-align: center;
@@ -383,7 +388,7 @@ a:hover {
 }
 
 .btn__arrow p {
-  font-weight: 600;
+  font-weight: 400;
   color: #b52804;
   cursor: pointer;
   margin-right: 14px;
@@ -449,6 +454,7 @@ main > section {
 
 .local__item-wrapper p {
   visibility: hidden;
+  padding-right: 1.5rem;
 }
 
 .home__sticky-address {

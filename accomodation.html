@@ -59,7 +59,7 @@
   <body>
     <header>
       <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md">
+      <nav class="navbar navbar-expand-md py-0 px-6">
         <a class="navbar-brand logo__wrapper p-4" href="/">
           <img class="logo" src="./assets/logo.png" alt="Logo" />
         </a>
@@ -87,17 +87,26 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="/privacy.html"
-                id="dropdown03"
-                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
                 aria-expanded="false"
+                id="dropdown04"
                 >About</a
               >
-              <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+              <ul class="dropdown-menu" aria-labelledby="dropdown04">
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="./welcome.html">Welcome</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./facilities.html"
+                    >Facilities</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./local-attractions.html"
+                    >Local Acctractions</a
+                  >
                 </li>
               </ul>
             </li>
@@ -105,11 +114,12 @@
           <button class="btn btn-outline-primary btn-lg mr-2">
             Call us +61 3 5792 1500
           </button>
-          <button class="btn btn-primary btn-lg">BOOK NOW</button>
+          <a href="https://useross.com/booking.php?dialog=motel&motel_id=433">
+            <button class="btn btn-primary btn-lg">BOOK NOW</button>
+          </a>
         </div>
       </nav>
     </header>
-
     <!-- Begin page content -->
     <main role="main">
       <!-- WELCOME -->
@@ -140,7 +150,7 @@
               <div class="accomodation__banner-title">
                 <h4
                   class="rozha-font"
-                  style="font-weight: 200; width: 200px; text-align: center"
+                  style="font-weight: 200; text-align: center; font-size: 64px"
                 >
                   Single Room
                 </h4>
@@ -354,36 +364,198 @@
       </section>
 
       <section>
+        <div style="text-align: center">
+          <h2 style="color: #c0bcb7; font-weight: 500" class="pb-2">
+            More options
+          </h2>
+        </div>
         <div style="padding: 60px">
-          <div style="text-align: center">
-            <h2 style="color: #c0bcb7; font-weight: 500" class="pb-2">
-              More options
-            </h2>
-          </div>
-
-          <div class="room__type-wrapper room__type-right ml-auto">
-            <img class="img-fluid" src="./assets/room-type-2.png" />
-            <div class="room__type-title">
-              <h2>Twin Room</h2>
-            </div>
-            <div class="room__type-price">
-              <p style="font-weight: 200; font-size: 16px" class="mb-0">
-                Start from
+          <div class="row" style="margin-bottom: 160px">
+            <div class="col-12 col-md-6">
+              <h2 style="color: #c0bcb7; font-weight: 500" class="pb-2">
+                Explore rooms & suites
+              </h2>
+              <p style="font-weight: 200">
+                Seymour is located next to the Hume Highway and is approximately
+                an hour away from Melbourne. Seymour Motel was the town's first
+                and remains one of the best in the area, offering perfectly
+                reasonable rates. The motel has expansive large blocks of land,
+                densely forested with magnificent gum trees and tranquil,
+                authentic Australian gardens.
               </p>
-              <p style="font-weight: 300; font-size: 20px">$120 / night</p>
             </div>
           </div>
 
-          <div class="room__type-wrapper room__type-left">
-            <img class="img-fluid" src="./assets/room-type-1.png" />
-            <div class="room__type-title">
-              <h2>Family Room</h2>
+          <div class="px-6">
+            <div
+              data-wow-delay="500ms"
+              class="row justify-content-start wow fadeInLeft"
+            >
+              <div class="col-12 col-md-6">
+                <div class="room__type-wrapper room__type-left">
+                  <img
+                    class="img-fluid"
+                    src="http://www.seymourmotel.com/wp-content/uploads/2021/11/room-type-1.png"
+                  />
+                  <div
+                    class="
+                      d-block d-md-none d-flex
+                      justify-content-between
+                      w-100
+                    "
+                  >
+                    <div>
+                      <p style="font-weight: 200; font-size: 16px" class="mb-0">
+                        Start from
+                      </p>
+                      <p style="font-weight: 300; font-size: 20px">
+                        $110 / night
+                      </p>
+                    </div>
+                    <div class="d-flex align-items-center btn__arrow">
+                      <p class="mb-0 mr-2">DETAIL</p>
+                      <img
+                        src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="room__type-title">
+                    <h2>Single Room</h2>
+                    <div class="room__type-discover">
+                      <a href="./accomodation.html">
+                        <div class="d-flex align-items-center btn__arrow">
+                          <p style="color: #b52804" class="mb-0 mr-2">DETAIL</p>
+                          <img
+                            src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="room__type-price d-none d-md-block">
+                    <p style="font-weight: 200; font-size: 16px" class="mb-0">
+                      Start from
+                    </p>
+                    <p style="font-weight: 300; font-size: 20px">
+                      $110 / night
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="room__type-price">
-              <p style="font-weight: 200; font-size: 16px" class="mb-0">
-                Start from
-              </p>
-              <p style="font-weight: 300; font-size: 20px">$160 / night</p>
+            <div class="row justify-content-end">
+              <div
+                data-wow-delay="500ms"
+                class="col-12 col-md-6 wow fadeInRight"
+              >
+                <div class="room__type-wrapper room__type-right ml-auto">
+                  <img
+                    class="img-fluid"
+                    src="http://www.seymourmotel.com/wp-content/uploads/2021/11/room-type-2.png"
+                  />
+                  <div
+                    class="
+                      d-block d-md-none d-flex
+                      justify-content-between
+                      w-100
+                    "
+                  >
+                    <div>
+                      <p style="font-weight: 200; font-size: 16px" class="mb-0">
+                        Start from
+                      </p>
+                      <p style="font-weight: 300; font-size: 20px">
+                        $110 / night
+                      </p>
+                    </div>
+                    <a href="./accomodation.html">
+                      <div class="d-flex align-items-center">
+                        <p style="color: #b52804" class="mb-0 mr-2">DETAIL</p>
+                        <img
+                          style="width: 80px; height: 4px"
+                          src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="room__type-title">
+                    <h2>Single Room</h2>
+                    <div class="room__type-discover">
+                      <div class="d-flex align-items-center btn__arrow">
+                        <p class="mb-0 mr-2">DETAIL</p>
+                        <img
+                          src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room__type-price d-none d-md-block">
+                    <p style="font-weight: 200; font-size: 16px" class="mb-0">
+                      Start from
+                    </p>
+                    <p style="font-weight: 300; font-size: 20px">
+                      $110 / night
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-start">
+              <div class="col-md-1 d-none d-md-block"></div>
+              <div
+                data-wow-delay="500ms"
+                class="col-12 col-md-6 wow fadeInLeft"
+              >
+                <div class="room__type-wrapper room__type-left">
+                  <img
+                    class="img-fluid"
+                    src="http://www.seymourmotel.com/wp-content/uploads/2021/11/room-type-3.png"
+                  />
+                  <div
+                    class="
+                      d-block d-md-none d-flex
+                      justify-content-between
+                      w-100
+                    "
+                  >
+                    <div>
+                      <p style="font-weight: 200; font-size: 16px" class="mb-0">
+                        Start from
+                      </p>
+                      <p style="font-weight: 300; font-size: 20px">
+                        $110 / night
+                      </p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <p class="mb-0 mr-2">DETAIL</p>
+                      <img
+                        style="width: 80px; height: 4px"
+                        src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="room__type-title">
+                    <h2>Family Room</h2>
+                    <div class="room__type-discover">
+                      <div class="d-flex align-items-center btn__arrow">
+                        <p class="mb-0 mr-2">DETAIL</p>
+                        <img
+                          src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room__type-price d-none d-md-block">
+                    <p style="font-weight: 200; font-size: 16px" class="mb-0">
+                      Start from
+                    </p>
+                    <p style="font-weight: 300; font-size: 20px">
+                      $110 / night
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
