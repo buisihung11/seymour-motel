@@ -711,11 +711,12 @@
             element.removeClass("active");
           }
 
-          // var listPopup = $(".location__map-wrapper .location__map-popup");
-          // console.log(listPopup);
-          // for (let item of listPopup) {
-          //   item.removeClass("active");
-          // }
+          var listPopup = $(".location__map-wrapper .location__map-popup");
+          console.log(listPopup);
+          for (let index = 0; index < listPopup.length; index++) {
+            const element = $(listPopup[index]);
+            element.removeClass("active");
+          }
 
           nav.toggleClass("active");
           let popup;
