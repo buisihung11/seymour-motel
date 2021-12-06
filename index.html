@@ -42,6 +42,23 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <!-- VIEWJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.css"
+      integrity="sha512-HGWrJz+Lr07phD0DNoLsSVwn3przno/eSLf1cGOrLzr6c7NUZROZJPhQdSPmLHNbsO0HP2UfUnpKTMiVxonEHw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.js"
+      integrity="sha512-taR40V17AK2+3RjqzCYkczb0/hTHuQCid0kBs0I2g6DqkFjkTcAIpsa+4PzGuWcRica2AOZQmz4pNPj4InFR8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- END VIEWJS -->
+
     <!-- Custom styles for this template -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -989,27 +1006,38 @@
             <h2 class="seymour-title">Gallery</h2>
           </div>
           <div class="col-12 col-md-9">
-            <div class="row no-wrap">
-              <div class="col-6 col-md-4 pb-4">
-                <img
-                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/gallery-1.png"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-6 col-md-4 pb-4">
-                <img
-                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/gallery-2.png"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-6 col-md-4 pb-4">
-                <img
-                  src="http://www.seymourmotel.com/wp-content/uploads/2021/12/gallery-3.png"
-                  alt=""
-                  class="img-fluid"
-                />
+            <div id="gallery" class="splide-gallery">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img
+                      src="http://www.seymourmotel.com/wp-content/uploads/2021/12/gallery-1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      src="http://www.seymourmotel.com/wp-content/uploads/2021/12/gallery-2.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      src="http://www.seymourmotel.com/wp-content/uploads/2021/12/gallery-3.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      src="http://www.seymourmotel.com/wp-content/uploads/2021/12/gallery-1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -1061,7 +1089,16 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        console.log(`WOW`, WOW);
+        var galley = document.getElementById("gallery1");
+        if (galley) {
+          var viewer = new Viewer(galley, {
+            title: function (image) {
+              return (
+                image.alt + " (" + (this.index + 1) + "/" + this.length + ")"
+              );
+            },
+          });
+        }
         new WOW().init();
         var splide = new Splide(".splide", {
           arrows: false,
@@ -1083,6 +1120,14 @@
           pagination: false,
         });
         splide2.mount();
+        var splide3 = new Splide(".splide-gallery", {
+          arrows: false,
+          type: "loop",
+          perPage: 3,
+          pagination: true,
+          autoplay: true,
+        });
+        splide3.mount();
         $(".splide-2 .slide__btn-prev").on("click", () => {
           splide2.go("<");
         });
