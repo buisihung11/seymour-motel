@@ -73,13 +73,9 @@
   <body>
     <header>
       <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md">
+      <nav class="navbar navbar-expand-md py-0 px-6">
         <a class="navbar-brand logo__wrapper p-4" href="/">
-          <img
-            class="logo"
-            src="http://www.seymourmotel.com/wp-content/uploads/2021/12/logo.png"
-            alt="Logo"
-          />
+          <img class="logo" src="./assets/logo.png" alt="Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -105,7 +101,7 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="/privacy.html"
+                href="/welcome.html"
                 id="dropdown03"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -138,7 +134,9 @@
 
       <div class="home__sticky-address">
         <p style="font-weight: 200; width: 200px">
-          144 Goulburn Valley Hwy, Seymour, VIC 3660
+          <a href="./location.html" style="color: inherit">
+            144 Goulburn Valley Hwy, Seymour, VIC 3660
+          </a>
         </p>
       </div>
 
@@ -373,12 +371,14 @@
                 <div class="room__type-title">
                   <h2>Single Room</h2>
                   <div class="room__type-discover">
-                    <div class="d-flex align-items-center btn__arrow">
-                      <p style="color: #b52804" class="mb-0 mr-2">DETAIL</p>
-                      <img
-                        src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
-                      />
-                    </div>
+                    <a href="./accomodation.html">
+                      <div class="d-flex align-items-center btn__arrow">
+                        <p style="color: #b52804" class="mb-0 mr-2">DETAIL</p>
+                        <img
+                          src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
+                        />
+                      </div>
+                    </a>
                   </div>
                 </div>
                 <div class="room__type-price d-none d-md-block">
@@ -408,13 +408,15 @@
                       $110 / night
                     </p>
                   </div>
-                  <div class="d-flex align-items-center">
-                    <p style="color: #b52804" class="mb-0 mr-2">DETAIL</p>
-                    <img
-                      style="width: 80px; height: 4px"
-                      src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
-                    />
-                  </div>
+                  <a href="./accomodation.html">
+                    <div class="d-flex align-items-center">
+                      <p style="color: #b52804" class="mb-0 mr-2">DETAIL</p>
+                      <img
+                        style="width: 80px; height: 4px"
+                        src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
+                      />
+                    </div>
+                  </a>
                 </div>
                 <div class="room__type-title">
                   <h2>Single Room</h2>
@@ -1003,15 +1005,17 @@
       <!-- END WELCOME -->
     </main>
 
-    <footer class="footer" style="padding: 0 60px">
+    <footer class="footer" style="padding: 0 60px; height: 112px">
       <div
         class="row align-items-center"
         style="padding: 24px 0px; border-top: 1px solid #c0bcb7"
       >
         <div class="col-3">
-          <p style="text-decoration: underline; color: #222222">
-            Privacy policy
-          </p>
+          <a href="./privacy.html">
+            <p style="text-decoration: underline; color: #222222">
+              Privacy policy
+            </p>
+          </a>
           <p style="color: #c0bcb7">
             ©2020 Seymour Motel. All Rights Reserved.
           </p>
