@@ -602,6 +602,83 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var galley = document.getElementById("gallery1");
+        if (galley) {
+          var viewer = new Viewer(galley, {
+            title: function (image) {
+              return (
+                image.alt + " (" + (this.index + 1) + "/" + this.length + ")"
+              );
+            },
+          });
+        }
+        new WOW().init();
+        var splide = new Splide(".splide", {
+          arrows: false,
+          type: "loop",
+          pagination: false,
+        });
+        splide.mount();
+        $(".splide .slide__btn-prev").on("click", () => {
+          splide.go("<");
+        });
+        $(".splide .slide__btn-next").on("click", () => {
+          splide.go(">");
+        });
+
+        var splide2 = new Splide(".splide-2", {
+          arrows: false,
+          type: "loop",
+          perPage: 3,
+          pagination: false,
+        });
+        splide2.mount();
+        var splide3 = new Splide(".splide-gallery", {
+          arrows: false,
+          type: "loop",
+          perPage: 3,
+          pagination: true,
+          autoplay: true,
+        });
+        splide3.mount();
+        $(".splide-2 .slide__btn-prev").on("click", () => {
+          splide2.go("<");
+        });
+        $(".splide-2 .slide__btn-next").on("click", () => {
+          splide2.go(">");
+        });
+
+        var facilitiesList = $(
+          ".home__facilities-wrapper .home__facilities-item"
+        );
+        var popup = $(".home__facilities-popup").first();
+        for (let index = 0; index < facilitiesList.length; index++) {
+          const item = $(facilitiesList[index]);
+          const description = item
+            .find(".facility__description-wrapper p")
+            .text()
+            .trim();
+          const isLeft = index % 2 === 0;
+
+          item.hover(
+            function (e) {
+              popup
+                .text(description)
+                .toggleClass("enabled")
+                .toggleClass(isLeft ? "popup-right" : "popup-left");
+            },
+            function (e) {
+              popup
+                .text(description)
+                .toggleClass("enabled")
+                .toggleClass(isLeft ? "popup-right" : "popup-left");
+            }
+          );
+        }
+      });
+    </script>
+    <script>
       window.jQuery ||
         document.write(
           '<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>'
