@@ -112,7 +112,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 48px;
 }
 
 h3 {
@@ -191,6 +191,29 @@ a:hover {
 .padd-120 {
   padding: 120px 0;
 }
+
+.home__subtitle {
+  font-size: 20px;
+  text-align: right;
+  margin-top: -15px;
+  padding-right: 9rem;
+}
+
+.home__welcome-right {
+  height: 800px;
+  position: relative;
+}
+.home__welcome-right img {
+  height: 100%;
+  object-fit: cover;
+}
+.home__welcome-right .home__welcome-right-second {
+  height: 560px;
+  position: absolute;
+  left: -80%;
+  top: 60%;
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   h2 {
     font-style: normal;
@@ -689,6 +712,100 @@ main > section {
 
 .howtobook__help-wrapper input:not(:last-child) {
   margin-bottom: 48px;
+}
+
+.home__localslider-wrapper .splide__slide {
+  width: 480px;
+  margin: 0 1rem;
+}
+
+.home__localslider-wrapper .local__item-wrapper img {
+  width: 100%;
+  height: 340px;
+  margin-bottom: 14px;
+}
+
+.splide-gallery .splide__slide {
+  margin: 0 14px;
+}
+
+/* IPAD */
+@media (max-width: 1439px) {
+  h1 {
+    font-size: 72px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  main > section {
+    padding-bottom: 160px;
+  }
+
+  .home__subtitle {
+    font-size: 16px;
+    padding-right: 6rem;
+  }
+
+  .home__welcome-right {
+    height: 600px;
+  }
+
+  .home__welcome-right .home__welcome-right-second {
+    height: 380px;
+    position: absolute;
+    left: -65%;
+    top: 70%;
+  }
+
+  .room__type-wrapper > img {
+    height: 274px;
+  }
+
+  .room__type-left .room__type-title {
+    right: 0;
+    transform: translate(50%, 0px);
+    padding: 24px 0px 24px 64px;
+  }
+
+  .room__type-left .room__type-price {
+    right: 0;
+    top: 70%;
+    transform: translate(110%, -50%);
+  }
+
+  .room__type-right .room__type-title {
+    left: 0;
+    transform: translate(-50%, 0px);
+    padding: 24px 64px 24px 0px;
+  }
+
+  .room__type-right .room__type-price {
+    left: 0;
+    top: 70%;
+    transform: translate(-110%, -50%);
+  }
+
+  .home__localslider-wrapper .splide__slide {
+    width: 288px;
+  }
+  .home__localslider-wrapper .local__item-wrapper h3 {
+    font-size: 24px;
+  }
+  .home__localslider-wrapper .local__item-wrapper img {
+    width: 100%;
+    height: 230px;
+    margin-bottom: 14px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 1023px) {
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 36px;
+  }
 }
 
 /* End How to book */
