@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./dist/css/bootstrap.css" />
 
     <!-- Bootstrap core CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.3.18/dist/js/splide-extension-grid.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -153,7 +154,7 @@
     </header>
 
     <!-- Begin page content -->
-    <main role="main">
+    <main class="home__main-wrapper" role="main">
       <!-- WELCOME -->
 
       <div class="home__sticky-address">
@@ -164,7 +165,7 @@
         </p>
       </div>
 
-      <section>
+      <section class="home__banner">
         <section class="row justify-content-center pb-5">
           <div class="mx-auto text-center pt-5 pb-2 col-12 col-lg-8 col-xl-8">
             <h1 class="rozha-font">Seymour Motel</h1>
@@ -258,6 +259,14 @@
               </div>
             </div>
           </div>
+          <div class="col-4 d-md-none">
+            <div class="d-sm-none btn__arrow align-items-center mb-4 p-0">
+              <p class="mb-0">DISCOVER</p>
+              <img
+                src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
+              />
+            </div>
+          </div>
 
           <div
             data-wow-delay="500ms"
@@ -275,10 +284,7 @@
               class="img-fluid"
             />
             <div class="text-center home__welcome-right-second">
-              <div
-                class="btn__arrow d-flex align-items-center mb-4"
-                style="transform: translate(25%, 0)"
-              >
+              <div class="d-md-flex d-none btn__arrow align-items-center mb-4">
                 <p class="mb-0">DISCOVER</p>
                 <img
                   src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
@@ -375,10 +381,10 @@
                       Start from
                     </p>
                     <p style="font-weight: 300; font-size: 20px">
-                      $110 / night
+                      $160 / night
                     </p>
                   </div>
-                  <div class="d-flex align-items-center btn__arrow">
+                  <div class="align-items-center btn__arrow">
                     <p class="mb-0 mr-2">DETAIL</p>
                     <img
                       src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
@@ -422,18 +428,15 @@
                       Start from
                     </p>
                     <p style="font-weight: 300; font-size: 20px">
-                      $110 / night
+                      $120 / night
                     </p>
                   </div>
-                  <a href="./accomodation.html">
-                    <div class="d-flex align-items-center">
-                      <p style="color: #b52804" class="mb-0 mr-2">DETAIL</p>
-                      <img
-                        style="width: 80px; height: 4px"
-                        src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
-                      />
-                    </div>
-                  </a>
+                  <div class="align-items-center btn__arrow">
+                    <p class="mb-0 mr-2">DETAIL</p>
+                    <img
+                      src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
+                    />
+                  </div>
                 </div>
                 <div class="room__type-title">
                   <h2>Twin Room</h2>
@@ -472,13 +475,12 @@
                       Start from
                     </p>
                     <p style="font-weight: 300; font-size: 20px">
-                      $110 / night
+                      $160 / night
                     </p>
                   </div>
-                  <div class="d-flex align-items-center">
+                  <div class="align-items-center btn__arrow">
                     <p class="mb-0 mr-2">DETAIL</p>
                     <img
-                      style="width: 80px; height: 4px"
                       src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
                     />
                   </div>
@@ -511,7 +513,7 @@
           <h1 class="cta__wrapper-title">Book your stay</h1>
           <p class="cta__wrapper-description">Find the best suit you</p>
           <div class="row justify-content-center">
-            <div class="col-12 col-md-3 col-xl-2">
+            <div class="col-8 col-md-3 col-xl-2 pb-2">
               <button
                 class="btn w-100 btn-lg btn-primary"
                 style="margin-right: 14px"
@@ -519,7 +521,7 @@
                 BOOK NOW
               </button>
             </div>
-            <div class="col-12 col-md-3 col-xl-2">
+            <div class="col-8 col-md-3 col-xl-2">
               <a href="./how-to-book.html">
                 <button class="btn w-100 btn-lg btn-outline-primary">
                   HOW TO BOOK
@@ -898,7 +900,14 @@
           <h2 style="color: #c0bcb7; font-weight: 500" class="pb-2">
             Happy customer
           </h2>
-          <div class="d-flex align-items-center justify-content-end btn__arrow">
+          <div
+            class="
+              d-none d-sm-flex
+              align-items-center
+              justify-content-end
+              btn__arrow
+            "
+          >
             <p class="mb-0">READ MORE</p>
             <img
               src="http://www.seymourmotel.com/wp-content/uploads/2021/11/arrow.png"
@@ -906,46 +915,82 @@
           </div>
         </div>
         <div class="row px-6 py-6">
-          <div class="col-xl-4 col-md-6 text-center">
-            <div style="border: 1px solid #c0bcb7; padding: 40px">
-              <img
-                src="http://www.seymourmotel.com/wp-content/uploads/2021/12/quote.png"
-                alt=""
-              />
-              <p class="py-5" style="font-size: 20px; font-weight: 300">
-                Our family stayed at the Seymour Motel during the time we
-                visited Melbourne. Clean rooms, great services, and who can say
-                no to an outdoor pool!
-              </p>
-              <p style="color: #c0bcb7">- Ashley -</p>
+          <div class="splide-testominal">
+            <div class="splide__arrows d-flex d-sm-none justify-content-center">
+              <div class="text-right pr-4 slide__btn slide__btn-prev">
+                <p class="mb-0">Previous</p>
+                <svg
+                  width="88"
+                  height="6"
+                  viewBox="0 0 88 6"
+                  fill="#E9E6E5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 3L5 0.113249V5.88675L0 3ZM88 3.5H4.5V2.5H88V3.5Z"
+                  />
+                </svg>
+              </div>
+              <div class="text-left slide__btn-next slide__btn">
+                <p class="mb-0">Next</p>
+                <svg
+                  width="88"
+                  height="6"
+                  viewBox="0 0 88 6"
+                  fill="#E9E6E5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M88 3L83 0.113249V5.88675L88 3ZM0 3.5H83.5V2.5H0V3.5Z"
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
-          <div class="col-xl-4 col-md-6 text-center">
-            <div style="border: 1px solid #c0bcb7; padding: 40px">
-              <img
-                src="http://www.seymourmotel.com/wp-content/uploads/2021/12/quote.png"
-                alt=""
-              />
-              <p class="py-5" style="font-size: 20px; font-weight: 300">
-                Our family stayed at the Seymour Motel during the time we
-                visited Melbourne. Clean rooms, great services, and who can say
-                no to an outdoor pool!
-              </p>
-              <p style="color: #c0bcb7">- Ashley -</p>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-6 text-center d-none d-xl-block">
-            <div style="border: 1px solid #c0bcb7; padding: 40px">
-              <img
-                src="http://www.seymourmotel.com/wp-content/uploads/2021/12/quote.png"
-                alt=""
-              />
-              <p class="py-5" style="font-size: 20px; font-weight: 300">
-                Our family stayed at the Seymour Motel during the time we
-                visited Melbourne. Clean rooms, great services, and who can say
-                no to an outdoor pool!
-              </p>
-              <p style="color: #c0bcb7">- Ashley -</p>
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div>
+                    <img
+                      src="http://www.seymourmotel.com/wp-content/uploads/2021/12/quote.png"
+                      alt=""
+                    />
+                    <p class="py-5" style="font-size: 20px; font-weight: 300">
+                      Our family stayed at the Seymour Motel during the time we
+                      visited Melbourne. Clean rooms, great services, and who
+                      can say no to an outdoor pool!
+                    </p>
+                    <p style="color: #c0bcb7">- Ashley -</p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div>
+                    <img
+                      src="http://www.seymourmotel.com/wp-content/uploads/2021/12/quote.png"
+                      alt=""
+                    />
+                    <p class="py-5" style="font-size: 20px; font-weight: 300">
+                      Our family stayed at the Seymour Motel during the time we
+                      visited Melbourne. Clean rooms, great services, and who
+                      can say no to an outdoor pool!
+                    </p>
+                    <p style="color: #c0bcb7">- Ashley -</p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div>
+                    <img
+                      src="http://www.seymourmotel.com/wp-content/uploads/2021/12/quote.png"
+                      alt=""
+                    />
+                    <p class="py-5" style="font-size: 20px; font-weight: 300">
+                      Our family stayed at the Seymour Motel during the time we
+                      visited Melbourne. Clean rooms, great services, and who
+                      can say no to an outdoor pool!
+                    </p>
+                    <p style="color: #c0bcb7">- Ashley -</p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -953,8 +998,8 @@
 
       <section>
         <div style="background-color: #e9e6e5">
-          <div class="row px-6 py-5">
-            <div class="col">
+          <div class="row px-6 py-5 text-center text-sm-left">
+            <div class="col pb-5">
               <h1 style="font-family: 'Rozha One' !important">Stay in touch</h1>
             </div>
             <div class="col d-flex flex-column">
@@ -985,7 +1030,7 @@
           </div>
           <div class="col-12 col-md-9">
             <div id="gallery" class="splide-gallery">
-              <div class="splide__arrows d-flex justify-content-end">
+              <div class="splide__arrows d-none d-sm-flex justify-content-end">
                 <div class="text-right pr-4 slide__btn slide__btn-prev">
                   <p class="mb-0">Previous</p>
                   <svg
@@ -1126,6 +1171,12 @@
           type: "loop",
           perPage: 3,
           pagination: false,
+          breakpoints: {
+            375: {
+              perPage: 1,
+              autoWidth: true,
+            },
+          },
         });
         splide2.mount();
         $(".splide-2 .slide__btn-prev").on("click", () => {
@@ -1134,15 +1185,59 @@
         $(".splide-2 .slide__btn-next").on("click", () => {
           splide2.go(">");
         });
+        var testominalSplide = new Splide(".splide-testominal", {
+          arrows: false,
+          type: "loop",
+          perPage: 3,
+          pagination: false,
+          breakpoints: {
+            375: {
+              perPage: 1,
+            },
+            1024: {
+              perPage: 2,
+            },
+          },
+        });
+        testominalSplide.mount();
+        $(".splide-testominal .slide__btn-prev").on("click", () => {
+          testominalSplide.go("<");
+        });
+        $(".splide-testominal .slide__btn-next").on("click", () => {
+          testominalSplide.go(">");
+        });
 
         var splide3 = new Splide(".splide-gallery", {
           arrows: false,
           type: "loop",
-          perPage: 3,
-          pagination: true,
+          pagination: false,
           autoplay: true,
+          grid: {
+            rows: 2,
+            cols: 2,
+            gap: {
+              row: "1rem",
+              col: "1rem",
+            },
+          },
+          breakpoints: {
+            375: {
+              grid: {
+                rows: 2,
+                cols: 2,
+                gap: {
+                  row: "1rem",
+                  col: "1rem",
+                },
+              },
+            },
+            1440: {
+              grid: false,
+              perPage: 3,
+            },
+          },
         });
-        splide3.mount();
+        splide3.mount(window.splide.Extensions);
         $(".splide-gallery .slide__btn-prev").on("click", () => {
           splide3.go("<");
         });

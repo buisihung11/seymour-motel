@@ -421,7 +421,7 @@ a:hover {
 }
 
 .btn__arrow img {
-  width: 80px;
+  width: 90px;
   height: 4px;
 }
 
@@ -729,6 +729,17 @@ main > section {
   margin: 0 14px;
 }
 
+.splide-testominal {
+  width: 100%;
+}
+
+.splide-testominal .splide__list .splide__slide > div {
+  border: 1px solid #c0bcb7;
+  padding: 40px;
+  text-align: center;
+  margin: 0 14px;
+}
+
 /* IPAD */
 @media (max-width: 1439px) {
   h1 {
@@ -739,6 +750,11 @@ main > section {
   }
   main > section {
     padding-bottom: 160px;
+  }
+
+  .home__welcome-right .home__welcome-right-second .btn__arrow {
+    flex-direction: column;
+    transform: translate(25%, 0);
   }
 
   .home__subtitle {
@@ -805,6 +821,91 @@ main > section {
   }
   h2 {
     font-size: 36px;
+  }
+
+  .home__main-wrapper p,
+  h1,
+  h2,
+  h3 {
+    font-weight: 700 !important;
+  }
+
+  .home__welcome-right {
+    height: 375px;
+    margin-bottom: -6rem;
+  }
+
+  .home__welcome-right .home__welcome-right-second {
+    width: 215px;
+    height: 221px;
+    position: absolute;
+    left: -50%;
+    top: 70%;
+  }
+
+  .home__localslider-wrapper .splide__slide {
+    width: 271px;
+    margin: 0 1rem;
+  }
+
+  .home__welcome-right .home__welcome-right-second .btn__arrow {
+    flex-direction: column;
+    transform: translate(0, 0);
+    align-items: flex-start !important;
+  }
+
+  .home__welcome-right .home__welcome-right-second .btn__arrow img {
+    width: 100px;
+  }
+
+  .home__welcome-right .home__welcome-right-second img {
+    width: 100%;
+  }
+
+  .home__banner-wrapper {
+    height: auto;
+  }
+  .home__banner .splide {
+    padding: 0 !important;
+  }
+
+  .home__subtitle {
+    font-size: 16px;
+    padding-right: 0rem;
+    text-align: center;
+    font-weight: 700;
+    padding: 0 4rem;
+    padding-top: 1rem;
+  }
+
+  .room__type-right .room__type-title {
+    left: 0;
+    transform: translate(0%, 0px);
+    padding: 0px 24px 24px 0px;
+  }
+  .room__type-left .room__type-title {
+    right: 0;
+    transform: translate(0%, 0px);
+    padding: 0px 0px 24px 24px;
+  }
+  .room__type-wrapper .room__type-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .convention__wrapper {
+    padding-bottom: 3rem;
+  }
+  .convention__wrapper h3 {
+    font-size: 24px;
+    padding: 1rem 0;
+  }
+
+  .splide-gallery .splide__slide {
+    margin: 0;
+  }
+  .splide-testominal .splide__list .splide__slide > div {
+    margin: 0;
   }
 }
 
