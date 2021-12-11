@@ -942,6 +942,17 @@ main > section {
   .cta__wrapper {
     padding: 80px 0;
   }
+
+  /* FACILITITES */
+  .facilities__group-wrapper {
+    text-align: left;
+  }
+  .facilities__group-wrapper .facilities__group-title {
+    font-weight: 400 !important;
+  }
+  .facility__description-wrapper p {
+    font-size: 16px !important;
+  }
 }
 
 /* End How to book */
