@@ -752,8 +752,13 @@ main > section {
   h2 {
     font-size: 36px;
   }
-  main > section {
+  main > section:not(:first-child) {
     padding-bottom: 160px;
+  }
+
+  /* FOR HEADER */
+  main > section:first-child {
+    padding-bottom: 80px;
   }
 
   .home__welcome-right .home__welcome-right-second .btn__arrow {
@@ -963,6 +968,15 @@ main > section {
   .local__gallery-wrapper h3 {
     font-size: 20px;
     font-weight: 300;
+  }
+
+  /* HOW TO BOOK  */
+  .step__wrapper h3 {
+    font-size: 24px;
+    padding-bottom: 16px;
+  }
+  .help__form-wrapper {
+    padding: 0 36px;
   }
 }
 
