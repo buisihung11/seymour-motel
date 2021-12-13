@@ -194,9 +194,9 @@ a:hover {
 
 .home__subtitle {
   font-size: 20px;
-  text-align: right;
+  text-align: center;
   margin-top: -15px;
-  padding-right: 9rem;
+  padding-left: 9rem;
 }
 
 .home__welcome-right {
@@ -206,12 +206,14 @@ a:hover {
 .home__welcome-right img {
   height: 100%;
   object-fit: cover;
+  width: 100%;
 }
 .home__welcome-right .home__welcome-right-second {
   height: 560px;
   position: absolute;
-  left: -80%;
+  left: 0%;
   top: 60%;
+  transform: translate(-300px, 0);
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -286,6 +288,8 @@ a:hover {
 
 .room__type-wrapper img {
   height: 400px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .room__type-wrapper .room__type-discover {
@@ -355,6 +359,12 @@ a:hover {
 
 .cta__wrapper {
   background-color: #e9e6e5;
+  padding: 120px;
+}
+
+.contact__wrapper {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .cta__wrapper .cta__wrapper-title {
@@ -376,9 +386,14 @@ a:hover {
 
 .home__banner-wrapper {
   width: 100%;
-  height: 480px;
+  height: auto;
   position: relative;
 }
+
+.splide__slide img {
+  width: 100%;
+}
+
 .home__banner-wrapper .home__banner-title {
   position: absolute;
 
@@ -727,10 +742,14 @@ main > section {
   width: 100%;
   height: 340px;
   margin-bottom: 14px;
+  object-fit: cover;
+}
+.splide-gallery img {
+  width: 100%;
 }
 
 .splide-gallery .splide__slide {
-  margin: 0 14px;
+  padding: 0 14px;
 }
 
 .splide-testominal {
@@ -742,6 +761,25 @@ main > section {
   padding: 40px;
   text-align: center;
   margin: 0 14px;
+}
+
+.row {
+  width: 100%;
+}
+
+.card-header:not(.collapsed) {
+  border: 1px solid #222222;
+  border-bottom: none;
+}
+
+.collapse_content.collapsing {
+  border: 1px solid #222222;
+  border-top: none;
+}
+
+.collapse_content.show {
+  border: 1px solid #222222;
+  border-top: none;
 }
 
 /* IPAD */
@@ -778,8 +816,9 @@ main > section {
   .home__welcome-right .home__welcome-right-second {
     height: 380px;
     position: absolute;
-    left: -65%;
+    left: 0%;
     top: 70%;
+    transform: translate(-200px, 0);
   }
 
   .room__type-wrapper > img {
@@ -848,8 +887,9 @@ main > section {
     width: 215px;
     height: 221px;
     position: absolute;
-    left: -50%;
+    left: 0;
     top: 70%;
+    transform: translate(-100px, 0);
   }
 
   .home__localslider-wrapper .splide__slide {
@@ -911,7 +951,7 @@ main > section {
   }
 
   .splide-gallery .splide__slide {
-    margin: 0;
+    padding: 0;
   }
   .splide-testominal .splide__list .splide__slide > div {
     margin: 0;
