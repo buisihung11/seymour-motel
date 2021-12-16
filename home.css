@@ -890,6 +890,17 @@ main > section {
     height: 230px;
     margin-bottom: 14px;
   }
+
+  /* FACILITIES */
+  .facilities__adrress-wrapper {
+    /* top: 150px; */
+  }
+
+  .facilities__adrress-wrapper
+    .facilities__adrress-inner
+    .facilities__adrress-content {
+    padding: 20px 0 20px 0px;
+  }
 }
 
 /* MOBILE */
