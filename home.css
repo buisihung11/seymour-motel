@@ -119,6 +119,10 @@ h3 {
   font-size: 36px;
 }
 
+header {
+  overflow: hidden;
+}
+
 .subtitle {
   font-size: 20px;
 }
